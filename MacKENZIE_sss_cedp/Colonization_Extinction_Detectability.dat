@@ -1,0 +1,3 @@
+ Negative loglikelihood (File 0):  NLL( Data | C=1.35553, E=1.15744, D=0.5, P_0=0.525745 ) = 855.286
+ Negative loglikelihood (File 1):  NLL( Data | C=1.17386, E=1.09515, D=0.5, P_0=0.460575 ) = 823.128
+ Negative loglikelihood (File 2):  NLL( Data | C=0.959539, E=1.21561, D=0.5, P_0=0.612528 ) = 782.257

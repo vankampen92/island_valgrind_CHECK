@@ -1,0 +1,501 @@
+
+ [Entering function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+ Reading File MacKenzie_Data_Matrix_0.dat...
+End of Line: 10	 Tab Separator: 9
+ A 50 species File (MacKenzie_Data_Matrix_0.dat)
+ with 11 sampling times (No_of_TIMES) has been read successfully
+ [Exiting function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+
+ Number of Species (File 0): 50
+ Sampling Times:	{ 2000 (3)  2000.4 (3)  2000.8 (3)  2001.2 (3)  2001.6 (3)  2002 (3)  2002.4 (3)  2002.8 (3)  2003.2 (3)  2003.6 (3)  2004 (3)   }
+ { 0 0 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0  }
+ { 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 1 1 1 1 0 0 0 0 1 0 0  }
+ { 0 0 0 0 0 0 1 0 1 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0  }
+ { 0 0 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 1 0 0 0 0 0 0  }
+ { 1 0 0 1 0 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 1 0 0 0 0 0 0 0 1 0  }
+ { 0 0 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0  }
+ { 0 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 0 1 1 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 1 0 0 1 0 1  }
+ { 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0  }
+ { 0 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 1 0 0 0  }
+ { 0 0 0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 0 0 0 0 0 1 0 1 0 1 1 0 0  }
+ { 0 0 0 1 0 1 1 1 0 0 0 0 1 1 1 0 0 0 1 1 1 0 0 1 1 0 1 0 1 0 0 0 0  }
+ { 0 0 0 1 0 0 0 1 0 0 0 0 1 1 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 0 1 1 0  }
+ { 0 1 0 1 1 1 1 1 1 0 0 0 1 0 1 0 0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1 0 1 1  }
+ { 1 0 1 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 0 1 0 1 1 1 0 0 0 0 0 0 0 0  }
+ { 1 1 1 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0  }
+ { 1 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 0 0 0 0 0 0 1 1 1 1 0 1  }
+ { 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 1 1 1 1 0 1 1 0 0 1 1 1 1 0 0 0 0  }
+ { 0 1 1 0 0 0 1 1 0 1 1 0 0 1 0 1 1 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 1  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 1 0 0 0  }
+ { 0 0 0 1 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 1 0 1 0 1 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0  }
+ { 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 0 0 0 1 1 0 0 1 1 1 1 1 0 1 0 0 0  }
+ { 1 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0  }
+ { 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1  }
+ { 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 1 1 1 1 0 1 1  }
+ { 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0  }
+ { 1 1 1 0 1 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0  }
+ { 1 1 1 0 0 0 1 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0  }
+ { 0 1 1 1 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 1 0 1 1 0  }
+ { 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 1 0 0  }
+ { 1 0 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 1 1 0 0 0 0 1 0 0 0 1 1 0 0 1 1  }
+ { 0 1 1 1 1 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 1 1 0 1 0  }
+
+
+
+ [Entering function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+ Reading File MacKenzie_Data_Matrix_1.dat...
+End of Line: 10	 Tab Separator: 9
+ A 50 species File (MacKenzie_Data_Matrix_1.dat)
+ with 11 sampling times (No_of_TIMES) has been read successfully
+ [Exiting function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+
+ Number of Species (File 1): 50
+ Sampling Times:	{ 2000 (3)  2000.4 (3)  2000.8 (3)  2001.2 (3)  2001.6 (3)  2002 (3)  2002.4 (3)  2002.8 (3)  2003.2 (3)  2003.6 (3)  2004 (3)   }
+ { 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 0 1 0 1  }
+ { 1 1 0 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 1  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0  }
+ { 0 0 0 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 0 1 1 1 0 0 1  }
+ { 0 0 0 1 1 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0  }
+ { 1 0 1 1 1 0 0 1 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0 0 0 0 0 0 0 1 1 0 1  }
+ { 1 1 1 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 0 1 1 0 1 1 1 1 1 1 0  }
+ { 1 0 1 1 1 0 1 1 1 0 1 1 0 1 1 1 1 1 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 0 0 1 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 1 0 0 1 0 1 0 1 0  }
+ { 0 1 0 0 1 0 0 0 0 0 1 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1  }
+ { 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 1 1 0 1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0  }
+ { 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1  }
+ { 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0  }
+ { 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 1 1 1  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0  }
+ { 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0  }
+ { 0 1 0 0 0 0 1 0 1 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1  }
+ { 0 0 0 1 1 1 0 0 0 0 0 0 1 1 0 0 0 1 1 1 0 1 0 1 0 0 0 0 0 0 0 0 0  }
+ { 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 1 1 1 0 1 1 1  }
+ { 0 0 0 0 0 0 1 0 0 0 0 1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 1 1 1 0 0 0  }
+ { 0 1 1 1 0 0 1 0 1 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 1 0 1 1  }
+ { 0 1 1 0 0 0 0 1 0 1 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 1 1 1 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 1 1 0 1 1 1 0 1 0 1 0 1 1 1 1 1  }
+ { 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 1 1 0 1 1  }
+ { 0 0 0 0 0 1 1 1 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1  }
+ { 1 1 0 1 0 1 1 0 0 0 1 1 0 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 0 0 0 1 1 1  }
+ { 0 1 1 0 1 0 0 0 0 0 0 1 0 0 0 0 1 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0  }
+ { 0 0 1 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1 0 1 1 1 0 0 0 0 1 1 1 1 1 0  }
+ { 0 1 1 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 1 1 0 0 1 1 0 1 0 0 1 1 0 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1 1 0  }
+ { 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1 0 1 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 1 1 0 1 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 1 1 0 1 0 1 0 1 0 0 0  }
+ { 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 0 1 1 0 0 1 1 1 1  }
+
+
+
+ [Entering function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+ Reading File MacKenzie_Data_Matrix_2.dat...
+End of Line: 10	 Tab Separator: 9
+ A 50 species File (MacKenzie_Data_Matrix_2.dat)
+ with 11 sampling times (No_of_TIMES) has been read successfully
+ [Exiting function Reading_MacKenzie_Generic_Matrix_from_File(...)]
+
+ Number of Species (File 2): 50
+ Sampling Times:	{ 2000 (3)  2000.4 (3)  2000.8 (3)  2001.2 (3)  2001.6 (3)  2002 (3)  2002.4 (3)  2002.8 (3)  2003.2 (3)  2003.6 (3)  2004 (3)   }
+ { 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 1 1 1 0 1 0 0 1 1 0 0 0 0 0 0 0  }
+ { 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0  }
+ { 0 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 1 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 1 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 0 1 0  }
+ { 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0  }
+ { 1 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 1 1 1 0 0 1  }
+ { 1 1 1 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 1 1 1 0 0 1 0 1  }
+ { 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 0  }
+ { 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0  }
+ { 1 0 1 1 1 1 1 1 0 0 0 1 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 1 0 1 0 1 1 1 1 1 0 1 1 1 1 1 1 0 1 0 1 1 1 0 0 0 1 0 1 1 1 0 1  }
+ { 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 0 1 0 0 1 1 0 1 1 1  }
+ { 0 0 0 0 0 1 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1  }
+ { 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1  }
+ { 1 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 0 0 1 1  }
+ { 1 0 0 1 0 0 0 1 1 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 1 0 0 0 0 1 1 1 0 0 1 1 0 0 1 0 1 0 0 0 1 1 0 1 1 1 0 0  }
+ { 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0  }
+ { 0 0 0 0 0 0 1 1 0 1 0 0 1 0 1 0 1 1 1 1 1 1 0 0 0 1 1 0 0 1 0 0 1  }
+ { 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 1 0 0 0 1 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 0 1  }
+ { 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0  }
+ { 0 0 1 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0  }
+ { 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 1 0 0 0 1 1 0  }
+ { 0 0 1 0 0 1 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0  }
+ { 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 1  }
+ { 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 1 1 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 1 1 1 0 0 0 0  }
+ { 0 1 1 1 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+ { 0 0 0 0 0 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 1 0 1  }
+ { 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 1 1 0 1  }
+ { 0 0 0 0 0 0 1 1 0 0 0 0 0 1 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+
+
+ Parameter Space Boundaries:	Dimension: 4
+ ---> Parameter Key 0: [C_0 = 0, C_1 = 2]
+ ---> Parameter Key 1: [E_0 = 0, E_1 = 2]
+ ---> Parameter Key 2: [D_0 = 0.01, D_1 = 0.99]
+ ---> Parameter Key 3: [P_0 = 0.01, P_1 = 0.99]
+No_of_PARAMETERS = 4
+    1 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 934.656 size = 0.015
+    2 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 934.656 size = 0.015
+    3 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 925.336 size = 0.019
+    4 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 925.336 size = 0.020
+    5 Colonization =  1.488e-01; Extinction   =  1.665e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 911.240 size = 0.028
+    6 Colonization =  1.488e-01; Extinction   =  1.665e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 911.240 size = 0.029
+    7 Colonization =  2.140e-01; Extinction   =  1.998e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 897.731 size = 0.038
+    8 Colonization =  2.140e-01; Extinction   =  1.998e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 897.731 size = 0.043
+    9 Colonization =  2.484e-01; Extinction   =  2.679e-01; Detectability =  3.393e-01; Phi_0   =  5.042e-01	f() = 896.150 size = 0.058
+   10 Colonization =  2.400e-01; Extinction   =  2.723e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 893.176 size = 0.063
+   11 Colonization =  2.400e-01; Extinction   =  2.723e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 893.176 size = 0.062
+   12 Colonization =  2.400e-01; Extinction   =  2.723e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 893.176 size = 0.051
+   13 Colonization =  2.319e-01; Extinction   =  2.358e-01; Detectability =  3.875e-01; Phi_0   =  4.907e-01	f() = 893.133 size = 0.040
+   14 Colonization =  2.319e-01; Extinction   =  2.358e-01; Detectability =  3.875e-01; Phi_0   =  4.907e-01	f() = 893.133 size = 0.031
+   15 Colonization =  2.319e-01; Extinction   =  2.358e-01; Detectability =  3.875e-01; Phi_0   =  4.907e-01	f() = 893.133 size = 0.031
+   16 Colonization =  2.902e-01; Extinction   =  3.016e-01; Detectability =  3.479e-01; Phi_0   =  4.848e-01	f() = 891.897 size = 0.038
+   17 Colonization =  2.902e-01; Extinction   =  3.016e-01; Detectability =  3.479e-01; Phi_0   =  4.848e-01	f() = 891.897 size = 0.037
+   18 Colonization =  2.902e-01; Extinction   =  3.016e-01; Detectability =  3.479e-01; Phi_0   =  4.848e-01	f() = 891.897 size = 0.034
+   19 Colonization =  2.631e-01; Extinction   =  2.342e-01; Detectability =  4.207e-01; Phi_0   =  4.662e-01	f() = 891.727 size = 0.037
+   20 Colonization =  3.028e-01; Extinction   =  3.058e-01; Detectability =  3.965e-01; Phi_0   =  4.618e-01	f() = 885.912 size = 0.048
+   21 Colonization =  3.028e-01; Extinction   =  3.058e-01; Detectability =  3.965e-01; Phi_0   =  4.618e-01	f() = 885.912 size = 0.048
+   22 Colonization =  4.032e-01; Extinction   =  3.481e-01; Detectability =  3.740e-01; Phi_0   =  4.352e-01	f() = 882.260 size = 0.055
+   23 Colonization =  4.032e-01; Extinction   =  3.481e-01; Detectability =  3.740e-01; Phi_0   =  4.352e-01	f() = 882.260 size = 0.060
+   24 Colonization =  4.243e-01; Extinction   =  3.905e-01; Detectability =  3.697e-01; Phi_0   =  4.262e-01	f() = 881.928 size = 0.065
+   25 Colonization =  4.796e-01; Extinction   =  3.993e-01; Detectability =  4.313e-01; Phi_0   =  3.914e-01	f() = 875.219 size = 0.077
+   26 Colonization =  6.392e-01; Extinction   =  4.620e-01; Detectability =  4.147e-01; Phi_0   =  3.363e-01	f() = 871.715 size = 0.105
+   27 Colonization =  6.392e-01; Extinction   =  4.620e-01; Detectability =  4.147e-01; Phi_0   =  3.363e-01	f() = 871.715 size = 0.118
+   28 Colonization =  8.164e-01; Extinction   =  6.226e-01; Detectability =  4.335e-01; Phi_0   =  2.706e-01	f() = 868.235 size = 0.149
+   29 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.159
+   30 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.159
+   31 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.138
+   32 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.126
+   33 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.101
+   34 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.064
+   35 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.058
+   36 Colonization =  8.536e-01; Extinction   =  6.046e-01; Detectability =  4.498e-01; Phi_0   =  2.567e-01	f() = 868.074 size = 0.069
+   37 Colonization =  7.883e-01; Extinction   =  6.012e-01; Detectability =  4.445e-01; Phi_0   =  2.812e-01	f() = 867.733 size = 0.059
+   38 Colonization =  7.883e-01; Extinction   =  6.012e-01; Detectability =  4.445e-01; Phi_0   =  2.812e-01	f() = 867.733 size = 0.039
+   39 Colonization =  7.883e-01; Extinction   =  6.012e-01; Detectability =  4.445e-01; Phi_0   =  2.812e-01	f() = 867.733 size = 0.040
+   40 Colonization =  8.719e-01; Extinction   =  6.280e-01; Detectability =  4.580e-01; Phi_0   =  2.517e-01	f() = 867.681 size = 0.039
+   41 Colonization =  8.391e-01; Extinction   =  6.842e-01; Detectability =  4.438e-01; Phi_0   =  2.663e-01	f() = 867.021 size = 0.043
+   42 Colonization =  8.391e-01; Extinction   =  6.842e-01; Detectability =  4.438e-01; Phi_0   =  2.663e-01	f() = 867.021 size = 0.045
+   43 Colonization =  8.391e-01; Extinction   =  6.842e-01; Detectability =  4.438e-01; Phi_0   =  2.663e-01	f() = 867.021 size = 0.045
+   44 Colonization =  8.928e-01; Extinction   =  7.273e-01; Detectability =  4.555e-01; Phi_0   =  2.545e-01	f() = 866.195 size = 0.057
+   45 Colonization =  8.928e-01; Extinction   =  7.273e-01; Detectability =  4.555e-01; Phi_0   =  2.545e-01	f() = 866.195 size = 0.056
+   46 Colonization =  8.696e-01; Extinction   =  7.364e-01; Detectability =  4.630e-01; Phi_0   =  2.558e-01	f() = 866.170 size = 0.056
+   47 Colonization =  8.696e-01; Extinction   =  7.364e-01; Detectability =  4.630e-01; Phi_0   =  2.558e-01	f() = 866.170 size = 0.055
+   48 Colonization =  9.056e-01; Extinction   =  8.628e-01; Detectability =  4.610e-01; Phi_0   =  2.626e-01	f() = 864.945 size = 0.068
+   49 Colonization =  9.056e-01; Extinction   =  8.628e-01; Detectability =  4.610e-01; Phi_0   =  2.626e-01	f() = 864.945 size = 0.070
+   50 Colonization =  9.056e-01; Extinction   =  8.628e-01; Detectability =  4.610e-01; Phi_0   =  2.626e-01	f() = 864.945 size = 0.070
+   51 Colonization =  9.056e-01; Extinction   =  8.628e-01; Detectability =  4.610e-01; Phi_0   =  2.626e-01	f() = 864.945 size = 0.068
+   52 Colonization =  9.056e-01; Extinction   =  8.628e-01; Detectability =  4.610e-01; Phi_0   =  2.626e-01	f() = 864.945 size = 0.070
+   53 Colonization =  8.921e-01; Extinction   =  9.042e-01; Detectability =  4.845e-01; Phi_0   =  2.822e-01	f() = 863.843 size = 0.074
+   54 Colonization =  8.921e-01; Extinction   =  9.042e-01; Detectability =  4.845e-01; Phi_0   =  2.822e-01	f() = 863.843 size = 0.076
+   55 Colonization =  8.921e-01; Extinction   =  9.042e-01; Detectability =  4.845e-01; Phi_0   =  2.822e-01	f() = 863.843 size = 0.075
+   56 Colonization =  8.921e-01; Extinction   =  9.042e-01; Detectability =  4.845e-01; Phi_0   =  2.822e-01	f() = 863.843 size = 0.079
+   57 Colonization =  8.506e-01; Extinction   =  1.027e+00; Detectability =  4.823e-01; Phi_0   =  3.183e-01	f() = 863.701 size = 0.080
+   58 Colonization =  9.853e-01; Extinction   =  1.122e+00; Detectability =  5.001e-01; Phi_0   =  2.762e-01	f() = 863.582 size = 0.072
+   59 Colonization =  8.659e-01; Extinction   =  1.005e+00; Detectability =  4.848e-01; Phi_0   =  3.303e-01	f() = 862.701 size = 0.074
+   60 Colonization =  8.659e-01; Extinction   =  1.005e+00; Detectability =  4.848e-01; Phi_0   =  3.303e-01	f() = 862.701 size = 0.075
+   61 Colonization =  8.659e-01; Extinction   =  1.005e+00; Detectability =  4.848e-01; Phi_0   =  3.303e-01	f() = 862.701 size = 0.084
+   62 Colonization =  8.659e-01; Extinction   =  1.005e+00; Detectability =  4.848e-01; Phi_0   =  3.303e-01	f() = 862.701 size = 0.085
+   63 Colonization =  1.048e+00; Extinction   =  1.289e+00; Detectability =  5.085e-01; Phi_0   =  3.102e-01	f() = 862.586 size = 0.100
+   64 Colonization =  1.048e+00; Extinction   =  1.289e+00; Detectability =  5.085e-01; Phi_0   =  3.102e-01	f() = 862.586 size = 0.096
+   65 Colonization =  9.137e-01; Extinction   =  1.195e+00; Detectability =  5.051e-01; Phi_0   =  3.651e-01	f() = 862.507 size = 0.096
+   66 Colonization =  1.034e+00; Extinction   =  1.110e+00; Detectability =  4.980e-01; Phi_0   =  3.171e-01	f() = 860.907 size = 0.104
+   67 Colonization =  1.034e+00; Extinction   =  1.110e+00; Detectability =  4.980e-01; Phi_0   =  3.171e-01	f() = 860.907 size = 0.104
+   68 Colonization =  1.034e+00; Extinction   =  1.110e+00; Detectability =  4.980e-01; Phi_0   =  3.171e-01	f() = 860.907 size = 0.115
+   69 Colonization =  9.142e-01; Extinction   =  1.034e+00; Detectability =  4.853e-01; Phi_0   =  4.131e-01	f() = 859.572 size = 0.120
+   70 Colonization =  1.183e+00; Extinction   =  1.102e+00; Detectability =  4.773e-01; Phi_0   =  3.393e-01	f() = 858.608 size = 0.140
+   71 Colonization =  1.183e+00; Extinction   =  1.102e+00; Detectability =  4.773e-01; Phi_0   =  3.393e-01	f() = 858.608 size = 0.143
+   72 Colonization =  1.077e+00; Extinction   =  8.932e-01; Detectability =  4.739e-01; Phi_0   =  3.660e-01	f() = 858.579 size = 0.150
+   73 Colonization =  1.019e+00; Extinction   =  8.199e-01; Detectability =  4.499e-01; Phi_0   =  4.265e-01	f() = 858.391 size = 0.144
+   74 Colonization =  1.278e+00; Extinction   =  1.224e+00; Detectability =  4.963e-01; Phi_0   =  4.209e-01	f() = 856.495 size = 0.187
+   75 Colonization =  1.278e+00; Extinction   =  1.224e+00; Detectability =  4.963e-01; Phi_0   =  4.209e-01	f() = 856.495 size = 0.188
+   76 Colonization =  1.278e+00; Extinction   =  1.224e+00; Detectability =  4.963e-01; Phi_0   =  4.209e-01	f() = 856.495 size = 0.185
+   77 Colonization =  1.482e+00; Extinction   =  1.130e+00; Detectability =  4.577e-01; Phi_0   =  5.128e-01	f() = 856.104 size = 0.216
+   78 Colonization =  1.482e+00; Extinction   =  1.130e+00; Detectability =  4.577e-01; Phi_0   =  5.128e-01	f() = 856.104 size = 0.211
+   79 Colonization =  1.427e+00; Extinction   =  1.261e+00; Detectability =  4.914e-01; Phi_0   =  5.514e-01	f() = 855.551 size = 0.203
+   80 Colonization =  1.427e+00; Extinction   =  1.261e+00; Detectability =  4.914e-01; Phi_0   =  5.514e-01	f() = 855.551 size = 0.154
+   81 Colonization =  1.427e+00; Extinction   =  1.261e+00; Detectability =  4.914e-01; Phi_0   =  5.514e-01	f() = 855.551 size = 0.157
+   82 Colonization =  1.427e+00; Extinction   =  1.261e+00; Detectability =  4.914e-01; Phi_0   =  5.514e-01	f() = 855.551 size = 0.142
+   83 Colonization =  1.388e+00; Extinction   =  1.131e+00; Detectability =  4.687e-01; Phi_0   =  5.082e-01	f() = 855.490 size = 0.124
+   84 Colonization =  1.239e+00; Extinction   =  1.100e+00; Detectability =  4.743e-01; Phi_0   =  5.137e-01	f() = 855.445 size = 0.096
+   85 Colonization =  1.350e+00; Extinction   =  1.228e+00; Detectability =  4.825e-01; Phi_0   =  5.324e-01	f() = 855.380 size = 0.087
+   86 Colonization =  1.373e+00; Extinction   =  1.184e+00; Detectability =  4.765e-01; Phi_0   =  5.557e-01	f() = 855.369 size = 0.079
+   87 Colonization =  1.382e+00; Extinction   =  1.211e+00; Detectability =  4.834e-01; Phi_0   =  5.394e-01	f() = 855.339 size = 0.069
+   88 Colonization =  1.362e+00; Extinction   =  1.156e+00; Detectability =  4.740e-01; Phi_0   =  5.218e-01	f() = 855.332 size = 0.061
+   89 Colonization =  1.303e+00; Extinction   =  1.148e+00; Detectability =  4.767e-01; Phi_0   =  5.255e-01	f() = 855.322 size = 0.042
+   90 Colonization =  1.303e+00; Extinction   =  1.148e+00; Detectability =  4.767e-01; Phi_0   =  5.255e-01	f() = 855.322 size = 0.041
+   91 Colonization =  1.303e+00; Extinction   =  1.148e+00; Detectability =  4.767e-01; Phi_0   =  5.255e-01	f() = 855.322 size = 0.040
+   92 Colonization =  1.352e+00; Extinction   =  1.141e+00; Detectability =  4.753e-01; Phi_0   =  5.311e-01	f() = 855.306 size = 0.036
+   93 Colonization =  1.360e+00; Extinction   =  1.178e+00; Detectability =  4.796e-01; Phi_0   =  5.304e-01	f() = 855.294 size = 0.027
+   94 Colonization =  1.360e+00; Extinction   =  1.178e+00; Detectability =  4.796e-01; Phi_0   =  5.304e-01	f() = 855.294 size = 0.027
+   95 Colonization =  1.360e+00; Extinction   =  1.178e+00; Detectability =  4.796e-01; Phi_0   =  5.304e-01	f() = 855.294 size = 0.025
+   96 Colonization =  1.360e+00; Extinction   =  1.178e+00; Detectability =  4.796e-01; Phi_0   =  5.304e-01	f() = 855.294 size = 0.025
+   97 Colonization =  1.340e+00; Extinction   =  1.162e+00; Detectability =  4.812e-01; Phi_0   =  5.219e-01	f() = 855.289 size = 0.024
+   98 Colonization =  1.339e+00; Extinction   =  1.152e+00; Detectability =  4.788e-01; Phi_0   =  5.218e-01	f() = 855.288 size = 0.022
+   99 Colonization =  1.356e+00; Extinction   =  1.157e+00; Detectability =  4.798e-01; Phi_0   =  5.257e-01	f() = 855.286 size = 0.018
+  100 Colonization =  1.356e+00; Extinction   =  1.157e+00; Detectability =  4.798e-01; Phi_0   =  5.257e-01	f() = 855.286 size = 0.014
+No_of_PARAMETERS = 4
+    1 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 898.987 size = 0.015
+    2 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 898.987 size = 0.015
+    3 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 889.019 size = 0.019
+    4 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 889.019 size = 0.020
+    5 Colonization =  1.488e-01; Extinction   =  1.665e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 877.510 size = 0.028
+    6 Colonization =  1.488e-01; Extinction   =  1.665e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 877.510 size = 0.029
+    7 Colonization =  2.140e-01; Extinction   =  1.998e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 864.006 size = 0.038
+    8 Colonization =  2.140e-01; Extinction   =  1.998e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 864.006 size = 0.043
+    9 Colonization =  2.122e-01; Extinction   =  2.252e-01; Detectability =  3.855e-01; Phi_0   =  5.002e-01	f() = 863.267 size = 0.043
+   10 Colonization =  2.542e-01; Extinction   =  3.008e-01; Detectability =  3.557e-01; Phi_0   =  4.945e-01	f() = 861.549 size = 0.054
+   11 Colonization =  2.832e-01; Extinction   =  3.027e-01; Detectability =  3.481e-01; Phi_0   =  4.768e-01	f() = 861.055 size = 0.062
+   12 Colonization =  2.832e-01; Extinction   =  3.027e-01; Detectability =  3.481e-01; Phi_0   =  4.768e-01	f() = 861.055 size = 0.062
+   13 Colonization =  2.380e-01; Extinction   =  2.412e-01; Detectability =  3.879e-01; Phi_0   =  4.892e-01	f() = 859.993 size = 0.049
+   14 Colonization =  2.380e-01; Extinction   =  2.412e-01; Detectability =  3.879e-01; Phi_0   =  4.892e-01	f() = 859.993 size = 0.039
+   15 Colonization =  2.380e-01; Extinction   =  2.412e-01; Detectability =  3.879e-01; Phi_0   =  4.892e-01	f() = 859.993 size = 0.033
+   16 Colonization =  2.380e-01; Extinction   =  2.412e-01; Detectability =  3.879e-01; Phi_0   =  4.892e-01	f() = 859.993 size = 0.030
+   17 Colonization =  2.606e-01; Extinction   =  2.749e-01; Detectability =  3.651e-01; Phi_0   =  4.822e-01	f() = 859.823 size = 0.020
+   18 Colonization =  2.490e-01; Extinction   =  2.442e-01; Detectability =  3.992e-01; Phi_0   =  4.661e-01	f() = 858.539 size = 0.022
+   19 Colonization =  2.790e-01; Extinction   =  2.190e-01; Detectability =  3.939e-01; Phi_0   =  4.620e-01	f() = 857.466 size = 0.026
+   20 Colonization =  2.852e-01; Extinction   =  2.746e-01; Detectability =  3.829e-01; Phi_0   =  4.658e-01	f() = 855.714 size = 0.031
+   21 Colonization =  3.294e-01; Extinction   =  2.771e-01; Detectability =  3.800e-01; Phi_0   =  4.287e-01	f() = 853.658 size = 0.039
+   22 Colonization =  3.294e-01; Extinction   =  2.771e-01; Detectability =  3.800e-01; Phi_0   =  4.287e-01	f() = 853.658 size = 0.041
+   23 Colonization =  4.051e-01; Extinction   =  2.641e-01; Detectability =  3.790e-01; Phi_0   =  4.069e-01	f() = 850.783 size = 0.053
+   24 Colonization =  4.398e-01; Extinction   =  3.481e-01; Detectability =  3.784e-01; Phi_0   =  3.739e-01	f() = 848.119 size = 0.071
+   25 Colonization =  5.434e-01; Extinction   =  2.922e-01; Detectability =  3.969e-01; Phi_0   =  2.973e-01	f() = 846.689 size = 0.095
+   26 Colonization =  5.434e-01; Extinction   =  2.922e-01; Detectability =  3.969e-01; Phi_0   =  2.973e-01	f() = 846.689 size = 0.099
+   27 Colonization =  5.434e-01; Extinction   =  2.922e-01; Detectability =  3.969e-01; Phi_0   =  2.973e-01	f() = 846.689 size = 0.098
+   28 Colonization =  5.434e-01; Extinction   =  2.922e-01; Detectability =  3.969e-01; Phi_0   =  2.973e-01	f() = 846.689 size = 0.097
+   29 Colonization =  6.386e-01; Extinction   =  3.687e-01; Detectability =  4.007e-01; Phi_0   =  2.405e-01	f() = 844.525 size = 0.100
+   30 Colonization =  6.386e-01; Extinction   =  3.687e-01; Detectability =  4.007e-01; Phi_0   =  2.405e-01	f() = 844.525 size = 0.083
+   31 Colonization =  6.386e-01; Extinction   =  3.687e-01; Detectability =  4.007e-01; Phi_0   =  2.405e-01	f() = 844.525 size = 0.075
+   32 Colonization =  6.386e-01; Extinction   =  3.687e-01; Detectability =  4.007e-01; Phi_0   =  2.405e-01	f() = 844.525 size = 0.063
+   33 Colonization =  6.687e-01; Extinction   =  3.588e-01; Detectability =  4.282e-01; Phi_0   =  2.224e-01	f() = 843.148 size = 0.073
+   34 Colonization =  5.041e-01; Extinction   =  3.647e-01; Detectability =  4.322e-01; Phi_0   =  3.003e-01	f() = 842.306 size = 0.082
+   35 Colonization =  6.793e-01; Extinction   =  4.627e-01; Detectability =  4.169e-01; Phi_0   =  2.245e-01	f() = 840.721 size = 0.095
+   36 Colonization =  6.793e-01; Extinction   =  4.627e-01; Detectability =  4.169e-01; Phi_0   =  2.245e-01	f() = 840.721 size = 0.090
+   37 Colonization =  6.505e-01; Extinction   =  5.158e-01; Detectability =  4.803e-01; Phi_0   =  2.173e-01	f() = 838.249 size = 0.099
+   38 Colonization =  5.765e-01; Extinction   =  6.533e-01; Detectability =  4.643e-01; Phi_0   =  2.496e-01	f() = 836.946 size = 0.117
+   39 Colonization =  5.765e-01; Extinction   =  6.533e-01; Detectability =  4.643e-01; Phi_0   =  2.496e-01	f() = 836.946 size = 0.121
+   40 Colonization =  5.996e-01; Extinction   =  7.744e-01; Detectability =  5.060e-01; Phi_0   =  2.540e-01	f() = 836.389 size = 0.145
+   41 Colonization =  5.996e-01; Extinction   =  7.744e-01; Detectability =  5.060e-01; Phi_0   =  2.540e-01	f() = 836.389 size = 0.126
+   42 Colonization =  5.996e-01; Extinction   =  7.744e-01; Detectability =  5.060e-01; Phi_0   =  2.540e-01	f() = 836.389 size = 0.104
+   43 Colonization =  5.996e-01; Extinction   =  7.744e-01; Detectability =  5.060e-01; Phi_0   =  2.540e-01	f() = 836.389 size = 0.078
+   44 Colonization =  6.096e-01; Extinction   =  7.076e-01; Detectability =  4.610e-01; Phi_0   =  2.488e-01	f() = 835.939 size = 0.078
+   45 Colonization =  6.980e-01; Extinction   =  8.391e-01; Detectability =  5.047e-01; Phi_0   =  2.083e-01	f() = 835.550 size = 0.080
+   46 Colonization =  6.980e-01; Extinction   =  8.391e-01; Detectability =  5.047e-01; Phi_0   =  2.083e-01	f() = 835.550 size = 0.065
+   47 Colonization =  6.826e-01; Extinction   =  6.554e-01; Detectability =  4.794e-01; Phi_0   =  2.345e-01	f() = 834.380 size = 0.073
+   48 Colonization =  6.826e-01; Extinction   =  6.554e-01; Detectability =  4.794e-01; Phi_0   =  2.345e-01	f() = 834.380 size = 0.063
+   49 Colonization =  6.826e-01; Extinction   =  6.554e-01; Detectability =  4.794e-01; Phi_0   =  2.345e-01	f() = 834.380 size = 0.054
+   50 Colonization =  6.996e-01; Extinction   =  7.284e-01; Detectability =  4.771e-01; Phi_0   =  2.449e-01	f() = 833.041 size = 0.056
+   51 Colonization =  6.996e-01; Extinction   =  7.284e-01; Detectability =  4.771e-01; Phi_0   =  2.449e-01	f() = 833.041 size = 0.043
+   52 Colonization =  6.996e-01; Extinction   =  7.284e-01; Detectability =  4.771e-01; Phi_0   =  2.449e-01	f() = 833.041 size = 0.043
+   53 Colonization =  7.353e-01; Extinction   =  5.658e-01; Detectability =  4.724e-01; Phi_0   =  2.755e-01	f() = 832.595 size = 0.053
+   54 Colonization =  7.289e-01; Extinction   =  6.798e-01; Detectability =  5.071e-01; Phi_0   =  2.818e-01	f() = 831.992 size = 0.060
+   55 Colonization =  7.482e-01; Extinction   =  6.630e-01; Detectability =  4.892e-01; Phi_0   =  3.320e-01	f() = 829.375 size = 0.067
+   56 Colonization =  7.482e-01; Extinction   =  6.630e-01; Detectability =  4.892e-01; Phi_0   =  3.320e-01	f() = 829.375 size = 0.065
+   57 Colonization =  7.482e-01; Extinction   =  6.630e-01; Detectability =  4.892e-01; Phi_0   =  3.320e-01	f() = 829.375 size = 0.068
+   58 Colonization =  7.482e-01; Extinction   =  6.630e-01; Detectability =  4.892e-01; Phi_0   =  3.320e-01	f() = 829.375 size = 0.065
+   59 Colonization =  9.166e-01; Extinction   =  5.863e-01; Detectability =  5.031e-01; Phi_0   =  4.423e-01	f() = 829.206 size = 0.089
+   60 Colonization =  8.410e-01; Extinction   =  8.555e-01; Detectability =  5.013e-01; Phi_0   =  3.738e-01	f() = 826.221 size = 0.104
+   61 Colonization =  8.410e-01; Extinction   =  8.555e-01; Detectability =  5.013e-01; Phi_0   =  3.738e-01	f() = 826.221 size = 0.105
+   62 Colonization =  9.096e-01; Extinction   =  7.582e-01; Detectability =  4.735e-01; Phi_0   =  5.340e-01	f() = 825.172 size = 0.128
+   63 Colonization =  1.008e+00; Extinction   =  7.713e-01; Detectability =  4.836e-01; Phi_0   =  5.268e-01	f() = 824.933 size = 0.130
+   64 Colonization =  1.008e+00; Extinction   =  7.713e-01; Detectability =  4.836e-01; Phi_0   =  5.268e-01	f() = 824.933 size = 0.130
+   65 Colonization =  9.765e-01; Extinction   =  9.941e-01; Detectability =  4.915e-01; Phi_0   =  5.792e-01	f() = 824.738 size = 0.130
+   66 Colonization =  8.930e-01; Extinction   =  8.608e-01; Detectability =  4.892e-01; Phi_0   =  4.493e-01	f() = 824.598 size = 0.113
+   67 Colonization =  9.163e-01; Extinction   =  8.933e-01; Detectability =  4.722e-01; Phi_0   =  4.905e-01	f() = 824.449 size = 0.101
+   68 Colonization =  1.027e+00; Extinction   =  1.123e+00; Detectability =  5.053e-01; Phi_0   =  4.663e-01	f() = 823.923 size = 0.130
+   69 Colonization =  1.027e+00; Extinction   =  1.123e+00; Detectability =  5.053e-01; Phi_0   =  4.663e-01	f() = 823.923 size = 0.112
+   70 Colonization =  1.027e+00; Extinction   =  1.123e+00; Detectability =  5.053e-01; Phi_0   =  4.663e-01	f() = 823.923 size = 0.100
+   71 Colonization =  1.027e+00; Extinction   =  1.123e+00; Detectability =  5.053e-01; Phi_0   =  4.663e-01	f() = 823.923 size = 0.106
+   72 Colonization =  1.051e+00; Extinction   =  1.062e+00; Detectability =  5.025e-01; Phi_0   =  5.260e-01	f() = 823.856 size = 0.094
+   73 Colonization =  1.151e+00; Extinction   =  1.159e+00; Detectability =  5.067e-01; Phi_0   =  4.815e-01	f() = 823.425 size = 0.099
+   74 Colonization =  1.151e+00; Extinction   =  1.159e+00; Detectability =  5.067e-01; Phi_0   =  4.815e-01	f() = 823.425 size = 0.074
+   75 Colonization =  1.151e+00; Extinction   =  1.159e+00; Detectability =  5.067e-01; Phi_0   =  4.815e-01	f() = 823.425 size = 0.070
+   76 Colonization =  1.151e+00; Extinction   =  1.159e+00; Detectability =  5.067e-01; Phi_0   =  4.815e-01	f() = 823.425 size = 0.073
+   77 Colonization =  1.175e+00; Extinction   =  1.073e+00; Detectability =  5.026e-01; Phi_0   =  4.367e-01	f() = 823.307 size = 0.082
+   78 Colonization =  1.175e+00; Extinction   =  1.073e+00; Detectability =  5.026e-01; Phi_0   =  4.367e-01	f() = 823.307 size = 0.080
+   79 Colonization =  1.137e+00; Extinction   =  1.098e+00; Detectability =  4.971e-01; Phi_0   =  4.413e-01	f() = 823.215 size = 0.079
+   80 Colonization =  1.137e+00; Extinction   =  1.098e+00; Detectability =  4.971e-01; Phi_0   =  4.413e-01	f() = 823.215 size = 0.059
+   81 Colonization =  1.137e+00; Extinction   =  1.098e+00; Detectability =  4.971e-01; Phi_0   =  4.413e-01	f() = 823.215 size = 0.050
+   82 Colonization =  1.174e+00; Extinction   =  1.061e+00; Detectability =  4.960e-01; Phi_0   =  4.752e-01	f() = 823.194 size = 0.042
+   83 Colonization =  1.193e+00; Extinction   =  1.117e+00; Detectability =  4.879e-01; Phi_0   =  4.830e-01	f() = 823.191 size = 0.047
+   84 Colonization =  1.148e+00; Extinction   =  1.051e+00; Detectability =  4.895e-01; Phi_0   =  4.691e-01	f() = 823.157 size = 0.037
+   85 Colonization =  1.176e+00; Extinction   =  1.066e+00; Detectability =  4.938e-01; Phi_0   =  4.567e-01	f() = 823.155 size = 0.033
+   86 Colonization =  1.155e+00; Extinction   =  1.086e+00; Detectability =  4.945e-01; Phi_0   =  4.561e-01	f() = 823.142 size = 0.028
+   87 Colonization =  1.155e+00; Extinction   =  1.086e+00; Detectability =  4.945e-01; Phi_0   =  4.561e-01	f() = 823.142 size = 0.028
+   88 Colonization =  1.155e+00; Extinction   =  1.086e+00; Detectability =  4.945e-01; Phi_0   =  4.561e-01	f() = 823.142 size = 0.022
+   89 Colonization =  1.155e+00; Extinction   =  1.086e+00; Detectability =  4.945e-01; Phi_0   =  4.561e-01	f() = 823.142 size = 0.020
+   90 Colonization =  1.187e+00; Extinction   =  1.117e+00; Detectability =  4.940e-01; Phi_0   =  4.531e-01	f() = 823.137 size = 0.020
+   91 Colonization =  1.173e+00; Extinction   =  1.081e+00; Detectability =  4.928e-01; Phi_0   =  4.584e-01	f() = 823.133 size = 0.017
+   92 Colonization =  1.173e+00; Extinction   =  1.095e+00; Detectability =  4.911e-01; Phi_0   =  4.642e-01	f() = 823.130 size = 0.015
+   93 Colonization =  1.173e+00; Extinction   =  1.095e+00; Detectability =  4.911e-01; Phi_0   =  4.642e-01	f() = 823.130 size = 0.014
+   94 Colonization =  1.173e+00; Extinction   =  1.095e+00; Detectability =  4.911e-01; Phi_0   =  4.642e-01	f() = 823.130 size = 0.013
+   95 Colonization =  1.181e+00; Extinction   =  1.104e+00; Detectability =  4.928e-01; Phi_0   =  4.568e-01	f() = 823.130 size = 0.010
+   96 Colonization =  1.175e+00; Extinction   =  1.089e+00; Detectability =  4.922e-01; Phi_0   =  4.592e-01	f() = 823.129 size = 0.009
+   97 Colonization =  1.175e+00; Extinction   =  1.089e+00; Detectability =  4.922e-01; Phi_0   =  4.592e-01	f() = 823.129 size = 0.008
+   98 Colonization =  1.174e+00; Extinction   =  1.095e+00; Detectability =  4.931e-01; Phi_0   =  4.606e-01	f() = 823.128 size = 0.008
+   99 Colonization =  1.174e+00; Extinction   =  1.095e+00; Detectability =  4.931e-01; Phi_0   =  4.606e-01	f() = 823.128 size = 0.008
+  100 Colonization =  1.174e+00; Extinction   =  1.095e+00; Detectability =  4.931e-01; Phi_0   =  4.606e-01	f() = 823.128 size = 0.007
+No_of_PARAMETERS = 4
+    1 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 867.996 size = 0.015
+    2 Colonization =  1.152e-01; Extinction   =  1.152e-01; Detectability =  4.802e-01; Phi_0   =  5.074e-01	f() = 867.996 size = 0.015
+    3 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 857.818 size = 0.019
+    4 Colonization =  1.398e-01; Extinction   =  1.398e-01; Detectability =  4.777e-01; Phi_0   =  4.923e-01	f() = 857.818 size = 0.020
+    5 Colonization =  1.665e-01; Extinction   =  1.488e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 845.803 size = 0.028
+    6 Colonization =  1.665e-01; Extinction   =  1.488e-01; Detectability =  4.415e-01; Phi_0   =  5.094e-01	f() = 845.803 size = 0.029
+    7 Colonization =  1.998e-01; Extinction   =  2.140e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 832.899 size = 0.038
+    8 Colonization =  1.998e-01; Extinction   =  2.140e-01; Detectability =  4.195e-01; Phi_0   =  4.880e-01	f() = 832.899 size = 0.043
+    9 Colonization =  2.679e-01; Extinction   =  2.484e-01; Detectability =  3.393e-01; Phi_0   =  5.042e-01	f() = 832.201 size = 0.058
+   10 Colonization =  2.723e-01; Extinction   =  2.400e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 828.392 size = 0.063
+   11 Colonization =  2.723e-01; Extinction   =  2.400e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 828.392 size = 0.062
+   12 Colonization =  2.723e-01; Extinction   =  2.400e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 828.392 size = 0.051
+   13 Colonization =  2.723e-01; Extinction   =  2.400e-01; Detectability =  3.629e-01; Phi_0   =  4.977e-01	f() = 828.392 size = 0.040
+   14 Colonization =  2.557e-01; Extinction   =  2.401e-01; Detectability =  4.236e-01; Phi_0   =  4.614e-01	f() = 826.574 size = 0.046
+   15 Colonization =  2.557e-01; Extinction   =  2.401e-01; Detectability =  4.236e-01; Phi_0   =  4.614e-01	f() = 826.574 size = 0.034
+   16 Colonization =  3.079e-01; Extinction   =  2.986e-01; Detectability =  3.691e-01; Phi_0   =  4.672e-01	f() = 823.430 size = 0.042
+   17 Colonization =  3.652e-01; Extinction   =  3.176e-01; Detectability =  3.618e-01; Phi_0   =  4.505e-01	f() = 822.063 size = 0.053
+   18 Colonization =  3.621e-01; Extinction   =  3.595e-01; Detectability =  4.100e-01; Phi_0   =  4.011e-01	f() = 815.654 size = 0.066
+   19 Colonization =  4.081e-01; Extinction   =  3.856e-01; Detectability =  4.536e-01; Phi_0   =  3.695e-01	f() = 811.592 size = 0.083
+   20 Colonization =  4.081e-01; Extinction   =  3.856e-01; Detectability =  4.536e-01; Phi_0   =  3.695e-01	f() = 811.592 size = 0.083
+   21 Colonization =  5.853e-01; Extinction   =  5.303e-01; Detectability =  4.610e-01; Phi_0   =  2.684e-01	f() = 806.512 size = 0.116
+   22 Colonization =  5.853e-01; Extinction   =  5.303e-01; Detectability =  4.610e-01; Phi_0   =  2.684e-01	f() = 806.512 size = 0.128
+   23 Colonization =  6.404e-01; Extinction   =  5.889e-01; Detectability =  4.777e-01; Phi_0   =  2.394e-01	f() = 805.665 size = 0.125
+   24 Colonization =  6.404e-01; Extinction   =  5.889e-01; Detectability =  4.777e-01; Phi_0   =  2.394e-01	f() = 805.665 size = 0.105
+   25 Colonization =  6.404e-01; Extinction   =  5.889e-01; Detectability =  4.777e-01; Phi_0   =  2.394e-01	f() = 805.665 size = 0.074
+   26 Colonization =  6.404e-01; Extinction   =  5.889e-01; Detectability =  4.777e-01; Phi_0   =  2.394e-01	f() = 805.665 size = 0.059
+   27 Colonization =  6.404e-01; Extinction   =  5.889e-01; Detectability =  4.777e-01; Phi_0   =  2.394e-01	f() = 805.665 size = 0.053
+   28 Colonization =  6.925e-01; Extinction   =  6.579e-01; Detectability =  4.597e-01; Phi_0   =  2.240e-01	f() = 805.514 size = 0.056
+   29 Colonization =  5.959e-01; Extinction   =  5.399e-01; Detectability =  4.445e-01; Phi_0   =  3.006e-01	f() = 804.658 size = 0.064
+   30 Colonization =  5.959e-01; Extinction   =  5.399e-01; Detectability =  4.445e-01; Phi_0   =  3.006e-01	f() = 804.658 size = 0.067
+   31 Colonization =  7.155e-01; Extinction   =  6.878e-01; Detectability =  4.863e-01; Phi_0   =  2.264e-01	f() = 803.251 size = 0.074
+   32 Colonization =  7.155e-01; Extinction   =  6.878e-01; Detectability =  4.863e-01; Phi_0   =  2.264e-01	f() = 803.251 size = 0.067
+   33 Colonization =  6.892e-01; Extinction   =  6.112e-01; Detectability =  4.696e-01; Phi_0   =  2.949e-01	f() = 800.462 size = 0.075
+   34 Colonization =  6.892e-01; Extinction   =  6.112e-01; Detectability =  4.696e-01; Phi_0   =  2.949e-01	f() = 800.462 size = 0.077
+   35 Colonization =  7.867e-01; Extinction   =  7.524e-01; Detectability =  4.881e-01; Phi_0   =  2.402e-01	f() = 800.209 size = 0.076
+   36 Colonization =  6.680e-01; Extinction   =  6.241e-01; Detectability =  5.218e-01; Phi_0   =  3.172e-01	f() = 799.515 size = 0.083
+   37 Colonization =  6.530e-01; Extinction   =  5.671e-01; Detectability =  4.799e-01; Phi_0   =  4.229e-01	f() = 795.566 size = 0.089
+   38 Colonization =  6.530e-01; Extinction   =  5.671e-01; Detectability =  4.799e-01; Phi_0   =  4.229e-01	f() = 795.566 size = 0.094
+   39 Colonization =  6.530e-01; Extinction   =  5.671e-01; Detectability =  4.799e-01; Phi_0   =  4.229e-01	f() = 795.566 size = 0.094
+   40 Colonization =  6.530e-01; Extinction   =  5.671e-01; Detectability =  4.799e-01; Phi_0   =  4.229e-01	f() = 795.566 size = 0.082
+   41 Colonization =  7.876e-01; Extinction   =  6.458e-01; Detectability =  5.070e-01; Phi_0   =  5.009e-01	f() = 791.041 size = 0.097
+   42 Colonization =  7.876e-01; Extinction   =  6.458e-01; Detectability =  5.070e-01; Phi_0   =  5.009e-01	f() = 791.041 size = 0.094
+   43 Colonization =  7.182e-01; Extinction   =  6.142e-01; Detectability =  4.683e-01; Phi_0   =  6.075e-01	f() = 790.180 size = 0.116
+   44 Colonization =  7.182e-01; Extinction   =  6.142e-01; Detectability =  4.683e-01; Phi_0   =  6.075e-01	f() = 790.180 size = 0.115
+   45 Colonization =  9.811e-01; Extinction   =  7.685e-01; Detectability =  4.711e-01; Phi_0   =  7.303e-01	f() = 788.495 size = 0.152
+   46 Colonization =  9.811e-01; Extinction   =  7.685e-01; Detectability =  4.711e-01; Phi_0   =  7.303e-01	f() = 788.495 size = 0.158
+   47 Colonization =  9.811e-01; Extinction   =  7.685e-01; Detectability =  4.711e-01; Phi_0   =  7.303e-01	f() = 788.495 size = 0.165
+   48 Colonization =  9.811e-01; Extinction   =  7.685e-01; Detectability =  4.711e-01; Phi_0   =  7.303e-01	f() = 788.495 size = 0.157
+   49 Colonization =  8.948e-01; Extinction   =  7.836e-01; Detectability =  4.788e-01; Phi_0   =  5.467e-01	f() = 786.858 size = 0.159
+   50 Colonization =  8.948e-01; Extinction   =  7.836e-01; Detectability =  4.788e-01; Phi_0   =  5.467e-01	f() = 786.858 size = 0.159
+   51 Colonization =  8.948e-01; Extinction   =  7.836e-01; Detectability =  4.788e-01; Phi_0   =  5.467e-01	f() = 786.858 size = 0.141
+   52 Colonization =  9.590e-01; Extinction   =  8.188e-01; Detectability =  5.123e-01; Phi_0   =  5.668e-01	f() = 786.776 size = 0.129
+   53 Colonization =  9.915e-01; Extinction   =  8.099e-01; Detectability =  4.869e-01; Phi_0   =  6.564e-01	f() = 786.750 size = 0.111
+   54 Colonization =  1.059e+00; Extinction   =  8.870e-01; Detectability =  5.038e-01; Phi_0   =  6.335e-01	f() = 786.152 size = 0.078
+   55 Colonization =  1.059e+00; Extinction   =  8.870e-01; Detectability =  5.038e-01; Phi_0   =  6.335e-01	f() = 786.152 size = 0.078
+   56 Colonization =  1.059e+00; Extinction   =  8.870e-01; Detectability =  5.038e-01; Phi_0   =  6.335e-01	f() = 786.152 size = 0.064
+   57 Colonization =  1.059e+00; Extinction   =  8.870e-01; Detectability =  5.038e-01; Phi_0   =  6.335e-01	f() = 786.152 size = 0.056
+   58 Colonization =  9.640e-01; Extinction   =  8.734e-01; Detectability =  5.068e-01; Phi_0   =  5.669e-01	f() = 785.468 size = 0.062
+   59 Colonization =  9.640e-01; Extinction   =  8.734e-01; Detectability =  5.068e-01; Phi_0   =  5.669e-01	f() = 785.468 size = 0.053
+   60 Colonization =  1.006e+00; Extinction   =  8.997e-01; Detectability =  4.894e-01; Phi_0   =  6.156e-01	f() = 785.055 size = 0.059
+   61 Colonization =  1.006e+00; Extinction   =  8.997e-01; Detectability =  4.894e-01; Phi_0   =  6.156e-01	f() = 785.055 size = 0.057
+   62 Colonization =  8.793e-01; Extinction   =  8.788e-01; Detectability =  4.886e-01; Phi_0   =  5.768e-01	f() = 784.596 size = 0.070
+   63 Colonization =  9.891e-01; Extinction   =  1.037e+00; Detectability =  5.130e-01; Phi_0   =  5.197e-01	f() = 784.016 size = 0.088
+   64 Colonization =  1.019e+00; Extinction   =  1.067e+00; Detectability =  4.855e-01; Phi_0   =  6.280e-01	f() = 783.295 size = 0.103
+   65 Colonization =  1.019e+00; Extinction   =  1.067e+00; Detectability =  4.855e-01; Phi_0   =  6.280e-01	f() = 783.295 size = 0.104
+   66 Colonization =  1.019e+00; Extinction   =  1.067e+00; Detectability =  4.855e-01; Phi_0   =  6.280e-01	f() = 783.295 size = 0.099
+   67 Colonization =  1.012e+00; Extinction   =  1.222e+00; Detectability =  4.980e-01; Phi_0   =  5.201e-01	f() = 783.198 size = 0.102
+   68 Colonization =  1.062e+00; Extinction   =  1.205e+00; Detectability =  5.150e-01; Phi_0   =  5.575e-01	f() = 782.932 size = 0.105
+   69 Colonization =  1.062e+00; Extinction   =  1.205e+00; Detectability =  5.150e-01; Phi_0   =  5.575e-01	f() = 782.932 size = 0.102
+   70 Colonization =  1.062e+00; Extinction   =  1.205e+00; Detectability =  5.150e-01; Phi_0   =  5.575e-01	f() = 782.932 size = 0.096
+   71 Colonization =  1.039e+00; Extinction   =  1.154e+00; Detectability =  4.919e-01; Phi_0   =  6.018e-01	f() = 782.823 size = 0.077
+   72 Colonization =  1.039e+00; Extinction   =  1.223e+00; Detectability =  4.974e-01; Phi_0   =  5.580e-01	f() = 782.806 size = 0.070
+   73 Colonization =  1.099e+00; Extinction   =  1.246e+00; Detectability =  4.968e-01; Phi_0   =  6.056e-01	f() = 782.796 size = 0.051
+   74 Colonization =  1.029e+00; Extinction   =  1.232e+00; Detectability =  4.919e-01; Phi_0   =  5.852e-01	f() = 782.696 size = 0.044
+   75 Colonization =  1.029e+00; Extinction   =  1.232e+00; Detectability =  4.919e-01; Phi_0   =  5.852e-01	f() = 782.696 size = 0.040
+   76 Colonization =  1.029e+00; Extinction   =  1.232e+00; Detectability =  4.919e-01; Phi_0   =  5.852e-01	f() = 782.696 size = 0.043
+   77 Colonization =  1.090e+00; Extinction   =  1.271e+00; Detectability =  5.011e-01; Phi_0   =  6.032e-01	f() = 782.644 size = 0.043
+   78 Colonization =  1.090e+00; Extinction   =  1.271e+00; Detectability =  5.011e-01; Phi_0   =  6.032e-01	f() = 782.644 size = 0.044
+   79 Colonization =  1.028e+00; Extinction   =  1.186e+00; Detectability =  4.973e-01; Phi_0   =  5.987e-01	f() = 782.566 size = 0.041
+   80 Colonization =  1.028e+00; Extinction   =  1.186e+00; Detectability =  4.973e-01; Phi_0   =  5.987e-01	f() = 782.566 size = 0.041
+   81 Colonization =  1.071e+00; Extinction   =  1.273e+00; Detectability =  5.121e-01; Phi_0   =  5.954e-01	f() = 782.548 size = 0.044
+   82 Colonization =  1.040e+00; Extinction   =  1.255e+00; Detectability =  5.022e-01; Phi_0   =  5.766e-01	f() = 782.544 size = 0.039
+   83 Colonization =  9.471e-01; Extinction   =  1.192e+00; Detectability =  5.007e-01; Phi_0   =  5.703e-01	f() = 782.507 size = 0.053
+   84 Colonization =  1.017e+00; Extinction   =  1.207e+00; Detectability =  5.085e-01; Phi_0   =  5.788e-01	f() = 782.490 size = 0.050
+   85 Colonization =  1.014e+00; Extinction   =  1.255e+00; Detectability =  5.102e-01; Phi_0   =  5.710e-01	f() = 782.472 size = 0.046
+   86 Colonization =  1.038e+00; Extinction   =  1.250e+00; Detectability =  5.087e-01; Phi_0   =  5.848e-01	f() = 782.458 size = 0.039
+   87 Colonization =  9.682e-01; Extinction   =  1.198e+00; Detectability =  5.118e-01; Phi_0   =  5.758e-01	f() = 782.430 size = 0.042
+   88 Colonization =  9.783e-01; Extinction   =  1.210e+00; Detectability =  5.052e-01; Phi_0   =  5.739e-01	f() = 782.429 size = 0.035
+   89 Colonization =  9.819e-01; Extinction   =  1.249e+00; Detectability =  5.095e-01; Phi_0   =  5.740e-01	f() = 782.409 size = 0.034
+   90 Colonization =  9.461e-01; Extinction   =  1.170e+00; Detectability =  5.061e-01; Phi_0   =  5.893e-01	f() = 782.364 size = 0.038
+   91 Colonization =  9.461e-01; Extinction   =  1.170e+00; Detectability =  5.061e-01; Phi_0   =  5.893e-01	f() = 782.364 size = 0.029
+   92 Colonization =  9.461e-01; Extinction   =  1.170e+00; Detectability =  5.061e-01; Phi_0   =  5.893e-01	f() = 782.364 size = 0.029
+   93 Colonization =  9.818e-01; Extinction   =  1.240e+00; Detectability =  5.097e-01; Phi_0   =  5.985e-01	f() = 782.291 size = 0.030
+   94 Colonization =  9.818e-01; Extinction   =  1.240e+00; Detectability =  5.097e-01; Phi_0   =  5.985e-01	f() = 782.291 size = 0.033
+   95 Colonization =  9.818e-01; Extinction   =  1.240e+00; Detectability =  5.097e-01; Phi_0   =  5.985e-01	f() = 782.291 size = 0.034
+   96 Colonization =  9.818e-01; Extinction   =  1.240e+00; Detectability =  5.097e-01; Phi_0   =  5.985e-01	f() = 782.291 size = 0.031
+   97 Colonization =  9.864e-01; Extinction   =  1.237e+00; Detectability =  5.066e-01; Phi_0   =  6.367e-01	f() = 782.290 size = 0.039
+   98 Colonization =  9.469e-01; Extinction   =  1.224e+00; Detectability =  5.098e-01; Phi_0   =  6.250e-01	f() = 782.269 size = 0.039
+   99 Colonization =  9.469e-01; Extinction   =  1.224e+00; Detectability =  5.098e-01; Phi_0   =  6.250e-01	f() = 782.269 size = 0.037
+  100 Colonization =  9.595e-01; Extinction   =  1.216e+00; Detectability =  5.054e-01; Phi_0   =  6.125e-01	f() = 782.257 size = 0.030
+ 
+ Results (summary):
+ Negative loglikelihood (File 0):  NLL( Data | C=1.35553, E=1.15744, D=0.479784, P_0=0.525745 ) = 855.286
+ Negative loglikelihood (File 1):  NLL( Data | C=1.17386, E=1.09515, D=0.493067, P_0=0.460575 ) = 823.128
+ Negative loglikelihood (File 2):  NLL( Data | C=0.959539, E=1.21561, D=0.505448, P_0=0.612528 ) = 782.257
+
+End of progam
