@@ -253,7 +253,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	  m++;
 	}
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); exit(1); }
+      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); }
     }
     if( (*Verbose) == 1) printf("\n");
     /*     E N D : --------------------------------------------------------
@@ -282,7 +282,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	}
 
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); exit(1); } // assert( R[i][j] == m );
+      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); } // assert( R[i][j] == m );
 
       if( (*Verbose) == 1) printf("\n");
       m = 0;
@@ -302,7 +302,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	  m++;
 	}
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); exit(1); } // assert( R[i][j] == m );
+      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); } // assert( R[i][j] == m );
       // if( (*Verbose) == 1 )  getchar();
     }
     /*     E N D : ---------------------------------------------------------*/

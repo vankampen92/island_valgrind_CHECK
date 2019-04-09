@@ -138,8 +138,9 @@ void Model_Selection_AIC_Latex_Table( char ** Name,
     default:
       // printf(" Index j = %d out of range (0,...,5) (Model Selection Latex Table Function)\n", j);
       printf(" Index j = %d out of range (0,...,5) (Model Selection Latex Table Function)\n", j);
-      // error(0,0, "Program aborted");
-      printf("Program aborted"); exit(1);
+      // IO_ERROR(0,0, "Program aborted");
+      // printf("Program will abort...");
+			IO_ERROR(0,0,"Program aborted");
     }
     // printf("Using point p for something: %s", p); printf("\n");
   }
@@ -175,8 +176,8 @@ void Model_Selection_AIC_Latex_Table( char ** Name,
     default:
       //printf(" Index i = %d out of range (0,1,2) (Model Selection Latex Table Function)\n", j);
       printf(" Index i = %d out of range (0,1,2) (Model Selection Latex Table Function)\n", j);
-      // error(0,0,"Program aborted");
-      printf("Program aborted"); exit(1);
+      IO_ERROR(0,0,"Program aborted");
+      // printf("Program will abort..."); IO_ERROR(0,0,"Program aborted");
     }
     // printf("Using point p for something: %s", p); printf("\n");
   }

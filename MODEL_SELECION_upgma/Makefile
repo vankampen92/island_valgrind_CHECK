@@ -22,7 +22,7 @@ CPG=NON_CPGPLOT_REPRESENTATION#Possibilities:'CPGPLOT_REPRESENTATION' / 'NON_CPG
 ## When no shared object is needed, the R_SHLIB flag is not required
 ## and RSH should be defined as NRSHLIB
 
-RSH=R_SHLIB# Only this option properly works: 'R_SHLIB' 
+RSH=NON_R_SHLIB# Optins 'R_SHLIB': R compilation / 'NON_R_SHLIB': C compilation
 ########################################################################
 
 LDFLAGS+=${EXTRA_LIBRARY_PATH} -lda_AUX  -lda_IO -lm -lgsl -lgslcblas
@@ -31,13 +31,15 @@ CXXFLAGS+=${EXTRA_INCLUDE_PATH} -g -Wall -D${CPG} -D${RSH}###############
 ########################################################################
 ########################################################################
 
-TYPE_of_MAIN=MacKenzie_3ATOLLS############ Options: 'COLEXT' / 'MacKenzie_7GUILDS'  
+TYPE_of_MAIN=MacKenzie_7GUILDS############ Options: 'COLEXT' / 'MacKenzie_7GUILDS'
 ## D E F I N I T I O N   N A M E   E X E C U T B L E   C O D E #########
 
 EXE=upgma_model_selection_${TYPE_of_MAIN}###############################
 ########################################################################
 
-OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.o MODEL_SELECTION_UPGMA_R_FUNCTION.o
+RUNPATH=-Wl,-rpath=${LIBRARY_DIR},-rpath=${LIBRARY_IO_DIR}#############
+
+OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o # MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.o MODEL_SELECTION_UPGMA_R_FUNCTION.o
 
 CC=gcc -fPIC -DSHARED_OBJECT##
 
@@ -46,7 +48,10 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 .c.o:
 	${CC} $(CXXFLAGS) -c $<
 
-${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
+### ${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
+###	$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
+
+${EXE}: $(OBJECTS) AUX_Library IO_Library
 	$(CC) $(CXXFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Forcing always a re-build of auxiliary static libraries
@@ -56,16 +61,16 @@ IO_Library:
 	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.a; make
 
 ##################################################################
-# Compiling libraries as a shared objects (dynamic libraries): 
+# Compiling libraries as a shared objects (dynamic libraries):
 AUX_Library_SO:
 	cd ${LIBRARY_DIR}; rm *.o; rm libda_AUX.so; make RSH=${RSH} da_AUX_SO
 IO_Library_SO:
-	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.so; make da_IO_SO
+	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.so; make RSH=${RSH} da_IO_SO
 
 ####################################################################
 #    B E G I N :  Build shared libraries (.so) to be callable from R:
 SHLIB_SO:
-	R CMD SHLIB -o MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.so MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.c -z defs $(LDFLAGS)
+	R CMD SHLIB -o MODEL_SELECTION_UPGMA_R_FUNCTION.so MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.c MODEL_SELECTION_UPGMA_R_FUNCTION.c -z defs $(LDFLAGS)
 #        E N D :  Example to build an R function from C code:
 ###################################################################
 

@@ -125,7 +125,7 @@ void Reading_MacKenzie_Data_Matrix_from_File(  char * File_Name,
   printf(" Reading File %s...\n", File_Name); 
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open file.\n");
-    exit(1);
+    IO_ERROR(0,0,"Program aborted");
   }
   N = 0;
   for(j=0; j < No_of_TIMES; j++) N += Transects[j]; 
@@ -211,7 +211,7 @@ void Reading_MacKenzie_Generic_Matrix_from_File(  char * File_Name,
   printf(" Reading File %s...\n", File_Name); 
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open file.\n");
-    exit(1);
+    IO_ERROR(0,0,"Program aborted");
   } 
   /* B E G I N : ---------------------------------------------------------------------
    *             Reading the first row (times and transects)
@@ -339,7 +339,7 @@ void Reading_MacKenzie_Generic_Matrix_nFactors_from_File(  char * File_Name,
   printf(" Reading File %s...\n", File_Name); 
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open file.\n");
-    exit(1);
+    IO_ERROR(0,0,"Program aborted");
   } 
   /* B E G I N : ---------------------------------------------------------------------
    *             Reading the first row (times and transects)

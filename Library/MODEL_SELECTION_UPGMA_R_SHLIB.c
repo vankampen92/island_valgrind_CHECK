@@ -148,15 +148,15 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
   */
   for(i=0; i<No_of_SPECIES; i++)
     if( General_No_of_SAMPLING_TIMES != Data[i]->No_of_TIMES )
-		// error(0, 0,"Number of Sampling Times do not match: program aborted");
-		{ printf("Number of Sampling Times does not match: program aborted"); exit(1); }
+		// IO_ERROR(0, 0,"Number of Sampling Times do not match: program aborted");
+		{ printf("Number of Sampling Times does not match: program aborted"); IO_ERROR(0,0,"Program aborted"); }
 		/* Calculating total number of rows of the presence matrix corresponding
      to the j-th group of the i-th partition: R[i][j] */
   int ** R          = (int **)calloc( No_of_SPECIES, sizeof(int *) );
   for (i=0; i<No_of_SPECIES; i++ ) R[i] = (int *)calloc( G[i], sizeof(int) );
   int ** R_que_R    = (int **)calloc( No_of_SPECIES, sizeof(int *) );
   for (i=0; i<No_of_SPECIES; i++ ) R_que_R[i] = (int *)calloc( G[i], sizeof(int) );
-  
+
   int N_SUM;
   for( i=0; i<No_of_SPECIES; i++ ) {
     for( j=0; j<G[i]; j++ ) {
@@ -166,12 +166,12 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
 	N_SUM += Data[n]->No_of_SITES;
       }
       R[i][j]       = N_SUM;
-      R_que_R[i][j] = N_SUM; 
+      R_que_R[i][j] = N_SUM;
     }
   }
-  /* R[i][j] will change down the code. We keep a copy of the R object in the R_que_R 
-     object in order to be able to free exactly the same amount of memory we have 
-     allocated!!! 
+  /* R[i][j] will change down the code. We keep a copy of the R object in the R_que_R
+     object in order to be able to free exactly the same amount of memory we have
+     allocated!!!
   */
   double **** Partition_Presence = (double ****)calloc( No_of_SPECIES,
 							sizeof(double ***) );
@@ -181,7 +181,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
       Partition_Presence[i][j] = (double **)calloc( R[i][j], sizeof(double *));
       for( k=0; k<R[i][j]; k++ ){
 	Partition_Presence[i][j][k] = (double *)calloc(General_No_of_SAMPLING_TIMES,
-						       sizeof(double )); 
+						       sizeof(double ));
       }
     }
   }
@@ -241,7 +241,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
 	    m++;
 	  }
 	}
-	if ( R[i][j] != m ) { printf("Program aborted\n"); exit(1); }
+	if ( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); }
       }
       if( (*Verbose) == 1) printf("\n");
       /*     E N D : --------------------------------------------------------
@@ -260,7 +260,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
 	No_of_TRANSITIONS = 0;
 	for( k=0; k<R[i][j]; k++ ) {
 
-	  if(No_of_Sp_Times[j][k] <= 1) { printf("Program aborted\n"); exit(1); }
+	  if(No_of_Sp_Times[j][k] <= 1) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); }
 
 	  if( (*Verbose) == 1 ) printf(" Times:\t");
 	  for(n=0; n<No_of_Sp_Times[j][k]; n++)
@@ -280,8 +280,8 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
 	    &N00, &N01, &N10, &N11 );
 
 	  if( N00 + N01 + N10 + N11 != No_of_TRANSITIONS )
-		// error(0, 0,"Number of Transititions do not sum up");
-		{ printf("Number of Transititions do not sum up"); exit(1); }
+		// IO_ERROR(0, 0,"Number of Transititions do not sum up");
+		{ printf("Number of Transititions do not sum up"); IO_ERROR(0,0,"Program aborted"); }
 
 	  if( (*Verbose) == 1 )
 	    printf(" Total No of TRANSITIONS (Partition: %d-th: Group %d-th) = %d\n",
@@ -350,7 +350,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
 				   i, No_of_Estimated_Parameters,
 				   MODEL_AIC[i], MODEL_AIC_c[i]);
       //getchar();
-      
+
       for( j=0; j<G[i]; j++ ){
 	for (k=0; k<R_que_R[i][j]; k++) {
 	  free(Sp_Time_Vector[j][k]);
@@ -369,7 +369,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
     char ** Name = (char **)calloc( No_of_SPECIES, sizeof(char *) );
     for (i=0; i<No_of_SPECIES; i++) {
       Name[i] = (char *)calloc( 50, sizeof(char) );
-      strcat(Name[i], Data[i]->Name); 
+      strcat(Name[i], Data[i]->Name);
       // memcpy( Name[i], Data[i]->Name, strlen(Data[i]->Name) );
     }
     Model_Selection_AIC_Latex_Table( Name,
@@ -390,7 +390,7 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
     for (i=0; i<No_of_SPECIES; i++) free(Name[i]);
     free(Name);
 
-    
+
     for( i=0; i<No_of_SPECIES; i++ ){
       for( j=0; j<G[i]; j++ ) {
 	for( k=0; k<R_que_R[i][j]; k++ ) free( Partition_Presence[i][j][k] );
@@ -399,24 +399,24 @@ void MODEL_SELECTION_UPGMA_R_SHLIB( double Colonization_Rate, double * C_Range,
       free( Partition_Presence[i] );
     }
     free( Partition_Presence );
-    
+
     for(i = 0; i<No_of_SPECIES; i++) {
       free(NLL[i]);
       free(COL[i]);
       free(EXT[i]);
       free(R[i]);
-      free(R_que_R[i]); 
+      free(R_que_R[i]);
     }
-    free(NLL); free(COL); free(EXT); free(R); free(R_que_R); 
+    free(NLL); free(COL); free(EXT); free(R); free(R_que_R);
     free(MODEL_NLL);
     free(MODEL_AIC);
     free(MODEL_AIC_c);
 
     for (i=0; i<No_of_SPECIES; i++ ) {
       free(K[i]);
-      for (j=0; j<G[i]; j++ ) free(PARTITION[i][j]); 
+      for (j=0; j<G[i]; j++ ) free(PARTITION[i][j]);
       free(PARTITION[i]);
     }
-    free(G); free(K); free(PARTITION); 
+    free(G); free(K); free(PARTITION);
     /*   E N D: ---------------------------------------- */
 }

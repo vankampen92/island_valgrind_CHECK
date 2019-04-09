@@ -37,7 +37,7 @@ TYPE_of_MAIN=LIKELIHOOD_MINIMIZATION_UNEVEN_R_FUNCTION_CHECK############
 EXE=MSS_CEDP############################################################
 ########################################################################
 
-OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o R_SHLIB___mle_MacKenzie_NLL_Uneven_Minimization.o
+OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o
 
 CC=gcc -fPIC -DSHARED_OBJECT##
 
@@ -55,7 +55,7 @@ AUX_Library:
 IO_Library:
 	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.a; make
 ##################################################################
-# Compiling libraries as a shared objects (dynamic libraries): 
+# Compiling libraries as a shared objects (dynamic libraries):
 AUX_Library_SO:
 	cd ${LIBRARY_DIR}; rm *.o; rm libda_AUX.so; make RSH=${RSH} da_AUX_SO
 IO_Library_SO:
@@ -63,7 +63,7 @@ IO_Library_SO:
 ####################################################################
 #    B E G I N :  Build shared libraries (.so) to be callable from R:
 SHLIB_SO:
-	R CMD SHLIB -o R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.so R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.c -z defs $(LDFLAGS)
+	R CMD SHLIB -o R_SHLIB___mle_MacKenzie_NLL_Minimization.so R_SHLIB___mle_MacKenzie_NLL_Uneven_Minimization.c R_SHLIB___mle_NLL_Unven_Minimization.c -z defs $(LDFLAGS)
 #        E N D :  Example to build an R function from C code:
 ###################################################################
 

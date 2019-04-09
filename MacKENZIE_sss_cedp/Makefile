@@ -37,7 +37,7 @@ TYPE_of_MAIN=LIKELIHOOD_MINIMIZATION_R_FUNCTION_CHECK###################
 EXE=SSS_CEDP############################################################
 ########################################################################
 
-OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.o
+OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o # R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.o
 
 CC=gcc -fPIC -DSHARED_OBJECT##
 
@@ -46,7 +46,7 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 .c.o:
 	${CC} $(CXXFLAGS) -c $<
 
-${EXE}:  	$(OBJECTS) AUX_Library IO_Library 
+${EXE}:  	$(OBJECTS) AUX_Library IO_Library
 		$(CC) $(CXXFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Forcing always a re-build of auxiliary libraries
@@ -58,7 +58,7 @@ IO_Library:
 ####################################################################
 #    B E G I N :  Build shared libraries (.so) to be callable from R:
 SHLIB_SO:
-	R CMD SHLIB -o R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.so R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.c -z defs $(LDFLAGS)
+	R CMD SHLIB -o R_SHLIB___MODEL_SELECTION_UPMGA.so MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.c MODEL_SELECTION_UPGMA_R_FUNCTION -z defs $(LDFLAGS)
 #        E N D :  Example to build an R function from C code:
 ###################################################################
 

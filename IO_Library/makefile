@@ -9,7 +9,7 @@ EXTRA_INCLUDE_PATH   = -I${LIB_DIR} -I${PROJECT_DIR}Include/ -I${PROJECT_DIR}Lib
 ## R_SHLIB is a compilation FLAG for the generation of libraries compatible
 ## with the generation of a shared object. When no shared object is needed,
 ## the R_SHLIB flag is not required and RSH should be defined as NON_R_SHLIB
-RSH = R_SHLIB
+RSH=NON_R_SHLIB ### 'Always this option!!!"
 
 CFLAGS=-g -Wall -DHAVE_INLINE -D${RSH} ${EXTRA_INCLUDE_PATH}
 ###CFLAGS= -Wall -O21
