@@ -4,6 +4,8 @@
 
 #define No_of_MATRIX_ROWS_MAX 10000
 
+#define HOME "/home/dalonso"
+
 void READ_FILES_ZOOPLANCTON_PIRINEUS ( int No_of_SPECIES,  
 				       double *** Presence, int * No_of_SITES, 
 				       double ** Time_Vector, 
@@ -75,24 +77,54 @@ void  zooplancton_Pirineus_File_Name_Creator_15SP(char ** Name)
   { 
   char * p;    
   // cyclopoidea (2): 
-  Name[0][0]='\0';  p = strcat(Name[0], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.abyssorum-temps.csv");
-  Name[1][0]='\0';  p = strcat(Name[1], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/A.vernalis-temps.csv");
+  Name[0][0]='\0';
+  p = strcat(Name[0], HOME);
+  p = strcat(Name[0], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.abyssorum-temps.csv");
+  Name[1][0]='\0';
+  p = strcat(Name[1], HOME);
+  p = strcat(Name[1], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/A.vernalis-temps.csv");
   // calanoidea (4):
-  Name[2][0]='\0';  p = strcat(Name[2], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.castaneti-temps.csv");
-  Name[3][0]='\0';  p = strcat(Name[3], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.cyaneus-temps.csv");
-  Name[4][0]='\0';  p = strcat(Name[4], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/E.vulgaris-temps.csv");
-  Name[5][0]='\0';  p = strcat(Name[5], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/M.laciniatus-temps.csv");
+  Name[2][0]='\0';
+  p = strcat(Name[2], HOME);
+  p = strcat(Name[2], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.castaneti-temps.csv");
+  Name[3][0]='\0';
+  p = strcat(Name[3], HOME);
+  p = strcat(Name[3], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.cyaneus-temps.csv");
+  Name[4][0]='\0';
+  p = strcat(Name[4], HOME);
+  p = strcat(Name[4], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/E.vulgaris-temps.csv");
+  Name[5][0]='\0';
+  p = strcat(Name[5], HOME);
+  p = strcat(Name[5], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/M.laciniatus-temps.csv");
   // branchiopoda (8):
-  Name[6][0]='\0';  p = strcat(Name[6], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.longispina-temps.csv");
-  Name[7][0]='\0';  p = strcat(Name[7], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.obtusa-temps.csv");
-  Name[8][0]='\0';  p = strcat(Name[8], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.pulicaria-temps.csv");
-  Name[9][0]='\0';  p = strcat(Name[9], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.quadrangula-temps.csv");
-  Name[10][0]='\0';  p = strcat(Name[10], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/H.gibberum-temps.csv");
-  Name[11][0]='\0';  p = strcat(Name[11], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/S.mucronata-temps.csv");
-  Name[12][0]='\0';  p = strcat(Name[12], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/S.vetulus-temps.csv");
-  Name[13][0]='\0';  p = strcat(Name[13], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.diaphanus-temps.csv");
+  Name[6][0]='\0';
+  p = strcat(Name[6], HOME);
+  p = strcat(Name[6], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.longispina-temps.csv");
+  Name[7][0]='\0';
+  p = strcat(Name[7], HOME);
+  p = strcat(Name[7], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.obtusa-temps.csv");
+  Name[8][0]='\0';
+  p = strcat(Name[8], HOME);
+  p = strcat(Name[8], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/D.pulicaria-temps.csv");
+  Name[9][0]='\0';
+  p = strcat(Name[9], HOME);
+  p = strcat(Name[9], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.quadrangula-temps.csv");
+  Name[10][0]='\0';
+  p = strcat(Name[10], HOME);
+  p = strcat(Name[10], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/H.gibberum-temps.csv");
+  Name[11][0]='\0';
+  p = strcat(Name[11], HOME);
+  p = strcat(Name[11], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/S.mucronata-temps.csv");
+  Name[12][0]='\0';
+  p = strcat(Name[12], HOME);
+  p = strcat(Name[12], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/S.vetulus-temps.csv");
+  Name[13][0]='\0';
+  p = strcat(Name[13], HOME);
+  p = strcat(Name[13], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/C.diaphanus-temps.csv");
   // amphipoda:
-  Name[14][0]='\0';  p = strcat(Name[14], "/home/dalonso/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/G.lacustris-temps.csv");
+  Name[14][0]='\0';
+  p = strcat(Name[14], HOME);
+  p = strcat(Name[14], "/PROJECT_ISLAND_BIOGEOGRAPHY/DATA_ZOOPLANCTON_PIRINEUS/G.lacustris-temps.csv");
   }  
 
 void IO_Procedures_Pirineus( double ** Presence, int * No_of_SPECIES,

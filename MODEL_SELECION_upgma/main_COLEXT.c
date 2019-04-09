@@ -69,7 +69,7 @@
 
    Compilation:
    
-   ~$ make TYPE_of_MAIN=COLEXT CPG=NON_CPGPLOT_REPRESENTATION RSH=R_SHLIB 
+   ~$ make TYPE_of_MAIN=COLEXT  
 
    Execution:
 

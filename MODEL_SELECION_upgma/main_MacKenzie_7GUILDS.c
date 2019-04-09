@@ -257,7 +257,7 @@ int main(int argc, char **argv)
     }
     printf("\n\n");
 
-    getchar(); 
+    // getchar(); 
   }
   
   /* B E G I N : ------------------------------------------------------- 

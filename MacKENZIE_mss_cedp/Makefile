@@ -58,7 +58,7 @@ AUX_Library:
 IO_Library:
 	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.a; make
 ##################################################################
-# Compiling libraries as a shared objects (dynamic libraries):
+# Compiling libraries as shared objects (dynamic libraries):
 AUX_Library_SO:
 	cd ${LIBRARY_DIR}; rm *.o; rm libda_AUX.so; make RSH=${RSH} da_AUX_SO
 IO_Library_SO:

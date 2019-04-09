@@ -40,7 +40,7 @@ EXE=SSS_CEDP############################################################
 # Variable to setup library paths for shared objects (*.so)#############
 RUNPATH=-Wl,-rpath=${LIBRARY_DIR}:${LIBRARY_IO_DIR}#####################
 
-OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o # R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.o
+OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o 
 
 CC=gcc -fPIC -DSHARED_OBJECT##
 
@@ -49,7 +49,7 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 .c.o:
 	${CC} $(CXXFLAGS) -c $<
 
-${EXE}:  	$(OBJECTS) AUX_Library IO_Library
+${EXE}:  	$(OBJECTS) AUX_Library_SO IO_Library_SO
 		$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Forcing always a re-build of auxiliary libraries
@@ -58,6 +58,11 @@ AUX_Library:
 IO_Library:
 	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.a; make
 ##################################################################
+# Compiling libraries as shared objects (dynamic libraries):
+AUX_Library_SO:
+	cd ${LIBRARY_DIR}; rm *.o; rm libda_AUX.so; make RSH=${RSH} da_AUX_SO
+IO_Library_SO:
+	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.so; make da_IO_SO
 ####################################################################
 #    B E G I N :  Build shared libraries (.so) to be callable from R:
 SHLIB_SO:

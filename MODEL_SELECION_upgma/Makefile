@@ -66,7 +66,7 @@ IO_Library:
 AUX_Library_SO:
 	cd ${LIBRARY_DIR}; rm *.o; rm libda_AUX.so; make RSH=${RSH} da_AUX_SO
 IO_Library_SO:
-	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.so; make RSH=${RSH} da_IO_SO
+	cd ${LIBRARY_IO_DIR}; rm *.o; rm libda_IO.so; make da_IO_SO
 
 ####################################################################
 #    B E G I N :  Build shared libraries (.so) to be callable from R:
