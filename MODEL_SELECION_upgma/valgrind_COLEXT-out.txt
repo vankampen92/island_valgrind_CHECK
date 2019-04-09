@@ -1,208 +1,132 @@
-==7621== Memcheck, a memory error detector
-==7621== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==7621== Using Valgrind-3.12.0.SVN and LibVEX; rerun with -h for copyright info
-==7621== Command: ./upgma_model_selection_COLEXT -Nr 15 -Nc 17 -pC 1.0 -pE 1.0 -sP 2 -sT 1.0E-08 -m0 0.0 -M0 10.0 -m1 0.0 -M1 10.0
-==7621== Parent PID: 1943
-==7621== 
---7621-- 
---7621-- Valgrind options:
---7621--    --leak-check=full
---7621--    --show-leak-kinds=all
---7621--    --track-origins=yes
---7621--    --verbose
---7621--    --log-file=valgrind_COLEXT-out.txt
---7621-- Contents of /proc/version:
---7621--   Linux version 3.19.0-69-generic (buildd@lgw01-18) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #77~14.04.1-Ubuntu SMP Tue Aug 30 01:29:21 UTC 2016
---7621-- 
---7621-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3
---7621-- Page sizes: currently 4096, max supported 4096
---7621-- Valgrind library directory: /usr/local/lib/valgrind
---7621-- Reading syms from /home/david/island_valgrind_CHECK/MODEL_SELECION_upgma/upgma_model_selection_COLEXT
---7621-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
---7621--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
---7621--   .. CRC mismatch (computed 10d8ea02 wanted 4fdda1aa)
---7621--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
---7621--   .. CRC is valid
---7621-- Reading syms from /usr/local/lib/valgrind/memcheck-amd64-linux
---7621--    object doesn't have a dynamic symbol table
---7621-- Scheduler: using generic scheduler lock implementation.
---7621-- Reading suppressions file: /usr/local/lib/valgrind/default.supp
-==7621== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-7621-by-david-on-???
-==7621== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-7621-by-david-on-???
-==7621== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-7621-by-david-on-???
-==7621== 
-==7621== TO CONTROL THIS PROCESS USING vgdb (which you probably
-==7621== don't want to do, unless you know exactly what you're doing,
-==7621== or are doing some strange experiment):
-==7621==   /usr/local/lib/valgrind/../../bin/vgdb --pid=7621 ...command...
-==7621== 
-==7621== TO DEBUG THIS PROCESS USING GDB: start GDB like this
-==7621==   /path/to/gdb ./upgma_model_selection_COLEXT
-==7621== and then give GDB the following command
-==7621==   target remote | /usr/local/lib/valgrind/../../bin/vgdb --pid=7621
-==7621== --pid is optional if only one valgrind process is running
-==7621== 
---7621-- REDIR: 0x401cf10 (ld-linux-x86-64.so.2:strlen) redirected to 0x38056ef1 (vgPlain_amd64_linux_REDIR_FOR_strlen)
---7621-- REDIR: 0x401b860 (ld-linux-x86-64.so.2:index) redirected to 0x38056f0b (vgPlain_amd64_linux_REDIR_FOR_index)
---7621-- Reading syms from /usr/local/lib/valgrind/vgpreload_core-amd64-linux.so
---7621-- Reading syms from /usr/local/lib/valgrind/vgpreload_memcheck-amd64-linux.so
-==7621== WARNING: new redirection conflicts with existing -- ignoring it
---7621--     old: 0x0401cf10 (strlen              ) R-> (0000.0) 0x38056ef1 vgPlain_amd64_linux_REDIR_FOR_strlen
---7621--     new: 0x0401cf10 (strlen              ) R-> (2007.0) 0x04c30a90 strlen
---7621-- REDIR: 0x401ba80 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c31be0 (strcmp)
---7621-- REDIR: 0x401dc70 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c34c60 (mempcpy)
---7621-- Reading syms from /home/david/island_valgrind_CHECK/Library/libda_AUX.so
---7621-- Reading syms from /home/david/island_valgrind_CHECK/IO_Library/libda_IO.so
---7621-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
---7621--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
---7621--   .. CRC mismatch (computed d1bcd7c2 wanted c6824701)
---7621--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
---7621--   .. CRC is valid
---7621-- Reading syms from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0
---7621--   Considering /usr/lib/debug/.build-id/df/4f3d1f505c3f6eff70f86f04fc46bb2027614d.debug ..
---7621--   .. build-id is valid
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
---7621-- Ignoring non-Dwarf2/3/4 block in .debug_info
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
---7621-- Last block truncated in .debug_info; ignoring
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
---7621-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
---7621-- Reading syms from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0
---7621--   Considering /usr/lib/debug/.build-id/5d/e74f156de30d67889a9897c978f6f0393372a0.debug ..
---7621--   .. build-id is valid
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
---7621-- Ignoring non-Dwarf2/3/4 block in .debug_info
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
---7621-- Last block truncated in .debug_info; ignoring
---7621-- WARNING: Serious error when reading debug info
---7621-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
---7621-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
---7621-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
---7621--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
---7621--   .. CRC mismatch (computed 10016417 wanted 1f868c97)
---7621--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
---7621--   .. CRC is valid
---7621-- REDIR: 0x5c71a00 (libc.so.6:strcasecmp) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c6d280 (libc.so.6:strcspn) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c73cf0 (libc.so.6:strncasecmp) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c6f6f0 (libc.so.6:strpbrk) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c6fa80 (libc.so.6:strspn) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c7114b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a287b0 (_vgnU_ifunc_wrapper)
---7621-- REDIR: 0x5c6f400 (libc.so.6:rindex) redirected to 0x4c30420 (rindex)
---7621-- REDIR: 0x5c66d10 (libc.so.6:calloc) redirected to 0x4c2f8df (calloc)
---7621-- REDIR: 0x5c78550 (libc.so.6:rawmemchr) redirected to 0x4c347c0 (rawmemchr)
---7621-- REDIR: 0x5c6d720 (libc.so.6:strlen) redirected to 0x4c309d0 (strlen)
---7621-- REDIR: 0x5c76470 (libc.so.6:__GI_memcpy) redirected to 0x4c32580 (__GI_memcpy)
---7621-- REDIR: 0x5c66130 (libc.so.6:malloc) redirected to 0x4c2db5c (malloc)
---7621-- REDIR: 0x5c713b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34990 (__GI_mempcpy)
---7621-- REDIR: 0x5c78760 (libc.so.6:strchrnul) redirected to 0x4c34780 (strchrnul)
---7621-- REDIR: 0x5c664f0 (libc.so.6:free) redirected to 0x4c2ec56 (free)
-==7621== 
-==7621== HEAP SUMMARY:
-==7621==     in use at exit: 17,287,822 bytes in 157,588 blocks
-==7621==   total heap usage: 157,590 allocs, 2 frees, 17,292,470 bytes allocated
-==7621== 
-==7621== Searching for pointers to 157,588 not-freed blocks
-==7621== Checked 16,908,504 bytes
-==7621== 
-==7621== 10 bytes in 1 blocks are still reachable in loss record 1 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x400DEF: main (include.Parameter_Model.default.c:13)
-==7621== 
-==7621== 10 bytes in 1 blocks are still reachable in loss record 2 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x400E4C: main (include.Parameter_Model.default.c:14)
-==7621== 
-==7621== 10 bytes in 1 blocks are still reachable in loss record 3 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x400EAD: main (include.Parameter_Model.default.c:15)
-==7621== 
-==7621== 10 bytes in 1 blocks are still reachable in loss record 4 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x400F0E: main (include.Parameter_Model.default.c:16)
-==7621== 
-==7621== 32 bytes in 1 blocks are still reachable in loss record 5 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x400DC9: main (include.Parameter_Model.default.c:11)
-==7621== 
-==7621== 50 bytes in 1 blocks are still reachable in loss record 6 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x50570EB: Reading_Standard_Data_Matrix_from_File (IO_Procedures_Standard.c:14)
-==7621==    by 0x50577F5: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:53)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== 60 bytes in 1 blocks are still reachable in loss record 7 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x40125D: main (main_COLEXT.c:177)
-==7621== 
-==7621== 120 bytes in 1 blocks are still reachable in loss record 8 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x4011BF: main (main_COLEXT.c:172)
-==7621== 
-==7621== 120 bytes in 1 blocks are still reachable in loss record 9 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x40123E: main (main_COLEXT.c:176)
-==7621== 
-==7621== 120 bytes in 1 blocks are still reachable in loss record 10 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x401292: main (main_COLEXT.c:179)
-==7621== 
-==7621== 120 bytes in 1 blocks are still reachable in loss record 11 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x505767A: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:37)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== 120 bytes in 1 blocks are still reachable in loss record 12 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x50576D8: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:41)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== 1,500 bytes in 15 blocks are still reachable in loss record 13 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x4011FC: main (main_COLEXT.c:173)
-==7621== 
-==7621== 1,500 bytes in 15 blocks are still reachable in loss record 14 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x50576AB: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:38)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== 2,000 bytes in 1 blocks are still reachable in loss record 15 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x401273: main (main_COLEXT.c:178)
-==7621== 
-==7621== 2,040 bytes in 15 blocks are still reachable in loss record 16 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x401313: main (main_COLEXT.c:183)
-==7621== 
-==7621== 60,000 bytes in 15 blocks are still reachable in loss record 17 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x401340: main (main_COLEXT.c:185)
-==7621== 
-==7621== 1,020,000 bytes in 7,500 blocks are still reachable in loss record 18 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x4013A8: main (main_COLEXT.c:187)
-==7621== 
-==7621== 1,200,000 bytes in 15 blocks are still reachable in loss record 19 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x5057709: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:43)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== 15,000,000 bytes in 150,000 blocks are still reachable in loss record 20 of 20
-==7621==    at 0x4C2F975: calloc (vg_replace_malloc.c:711)
-==7621==    by 0x5057749: READ_FILES_ZOOPLANCTON_PIRINEUS (IO_Procedures_Pirineus.c:45)
-==7621==    by 0x401409: main (main_COLEXT.c:190)
-==7621== 
-==7621== LEAK SUMMARY:
-==7621==    definitely lost: 0 bytes in 0 blocks
-==7621==    indirectly lost: 0 bytes in 0 blocks
-==7621==      possibly lost: 0 bytes in 0 blocks
-==7621==    still reachable: 17,287,822 bytes in 157,588 blocks
-==7621==         suppressed: 0 bytes in 0 blocks
-==7621== 
-==7621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==7621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==14962== Memcheck, a memory error detector
+==14962== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==14962== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==14962== Command: ./upgma_model_selection_COLEXT -Nr 15 -Nc 17 -pC 1.0 -pE 1.0 -sP 2 -sT 1.0E-08 -m0 0.0 -M0 10.0 -m1 0.0 -M1 10.0
+==14962== Parent PID: 6868
+==14962== 
+--14962-- 
+--14962-- Valgrind options:
+--14962--    --leak-check=full
+--14962--    --show-leak-kinds=all
+--14962--    --track-origins=yes
+--14962--    --verbose
+--14962--    --log-file=valgrind-out.txt
+--14962-- Contents of /proc/version:
+--14962--   Linux version 4.15.0-47-generic (buildd@lgw01-amd64-028) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10)) #50~16.04.1-Ubuntu SMP Fri Mar 15 16:06:21 UTC 2019
+--14962-- 
+--14962-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--14962-- Page sizes: currently 4096, max supported 4096
+--14962-- Valgrind library directory: /usr/lib/valgrind
+--14962-- Reading syms from /home/dalonso/PROJECT_island_valgrind_CHECK/MODEL_SELECION_upgma/upgma_model_selection_COLEXT
+--14962-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--14962--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--14962--   .. CRC mismatch (computed 10d8ea02 wanted 4fdda1aa)
+--14962--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--14962--   .. CRC is valid
+--14962-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--14962--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--14962--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--14962--   Considering /usr/lib/debug/usr/lib/valgrind/memcheck-amd64-linux ..
+--14962--   .. CRC is valid
+--14962--    object doesn't have a dynamic symbol table
+--14962-- Scheduler: using generic scheduler lock implementation.
+--14962-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==14962== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-14962-by-dalonso-on-???
+==14962== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-14962-by-dalonso-on-???
+==14962== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-14962-by-dalonso-on-???
+==14962== 
+==14962== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==14962== don't want to do, unless you know exactly what you're doing,
+==14962== or are doing some strange experiment):
+==14962==   /usr/lib/valgrind/../../bin/vgdb --pid=14962 ...command...
+==14962== 
+==14962== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==14962==   /path/to/gdb ./upgma_model_selection_COLEXT
+==14962== and then give GDB the following command
+==14962==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=14962
+==14962== --pid is optional if only one valgrind process is running
+==14962== 
+--14962-- REDIR: 0x401cf10 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--14962-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--14962--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--14962--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--14962--   Considering /usr/lib/debug/usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--14962--   .. CRC is valid
+--14962-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--14962--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--14962--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--14962--   Considering /usr/lib/debug/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--14962--   .. CRC is valid
+==14962== WARNING: new redirection conflicts with existing -- ignoring it
+--14962--     old: 0x0401cf10 (strlen              ) R-> (0000.0) 0x3809e181 vgPlain_amd64_linux_REDIR_FOR_strlen
+--14962--     new: 0x0401cf10 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--14962-- REDIR: 0x401b860 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--14962-- REDIR: 0x401ba80 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--14962-- REDIR: 0x401dc70 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--14962-- Reading syms from /home/dalonso/PROJECT_island_valgrind_CHECK/Library/libda_AUX.so
+--14962-- Reading syms from /home/dalonso/PROJECT_island_valgrind_CHECK/IO_Library/libda_IO.so
+--14962-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
+--14962--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
+--14962--   .. CRC mismatch (computed d1bcd7c2 wanted c6824701)
+--14962--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
+--14962--   .. CRC is valid
+--14962-- Reading syms from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0
+--14962--   Considering /usr/lib/debug/.build-id/df/4f3d1f505c3f6eff70f86f04fc46bb2027614d.debug ..
+--14962--   .. build-id is valid
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
+--14962-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
+--14962-- Last block truncated in .debug_info; ignoring
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0:
+--14962-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
+--14962-- Reading syms from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0
+--14962--   Considering /usr/lib/debug/.build-id/5d/e74f156de30d67889a9897c978f6f0393372a0.debug ..
+--14962--   .. build-id is valid
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
+--14962-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
+--14962-- Last block truncated in .debug_info; ignoring
+--14962-- WARNING: Serious error when reading debug info
+--14962-- When reading debug info from /usr/lib/x86_64-linux-gnu/libgslcblas.so.0.0.0:
+--14962-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
+--14962-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--14962--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--14962--   .. CRC mismatch (computed 10016417 wanted 1f868c97)
+--14962--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--14962--   .. CRC is valid
+--14962-- REDIR: 0x5c72a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c6e280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c74cf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c706f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c70a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c7214b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c70400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--14962-- REDIR: 0x5c67d10 (libc.so.6:calloc) redirected to 0x4c2faa0 (calloc)
+--14962-- REDIR: 0x5c79550 (libc.so.6:rawmemchr) redirected to 0x4c34dd0 (rawmemchr)
+--14962-- REDIR: 0x5c6e720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--14962-- REDIR: 0x5c77470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+--14962-- REDIR: 0x5c67130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--14962-- REDIR: 0x5c79760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+--14962-- REDIR: 0x5c723b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+--14962-- REDIR: 0x5c71060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--14962-- REDIR: 0x5c6e160 (libc.so.6:strcpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c889d0 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c31040 (strcpy)
+--14962-- REDIR: 0x5c674f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+--14962-- REDIR: 0x5c6c880 (libc.so.6:strcat) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5c8b7f0 (libc.so.6:__strcat_sse2_unaligned) redirected to 0x4c30c00 (strcat)
+--14962-- REDIR: 0x5c721b0 (libc.so.6:memset) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--14962-- REDIR: 0x5d55970 (libc.so.6:__memset_avx2) redirected to 0x4c344c0 (memset)
+==14962== 
+==14962== HEAP SUMMARY:
+==14962==     in use at exit: 0 bytes in 0 blocks
+==14962==   total heap usage: 46,450,337 allocs, 46,450,337 frees, 758,424,178 bytes allocated
+==14962== 
+==14962== All heap blocks were freed -- no leaks are possible
+==14962== 
+==14962== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==14962== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
