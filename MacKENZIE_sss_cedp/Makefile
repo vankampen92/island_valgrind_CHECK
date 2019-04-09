@@ -22,7 +22,7 @@ CPG=NON_CPGPLOT_REPRESENTATION#Possibilities:'CPGPLOT_REPRESENTATION' / 'NON_CPG
 ## When no shared object is needed, the R_SHLIB flag is not required
 ## and RSH should be defined as NRSHLIB
 
-RSH=R_SHLIB# Only these two options will properly work: 'R_SHLIB' / 'NRSHLIB'
+RSH=NON_R_SHLIB# Optins 'R_SHLIB': R compilation / 'NON_R_SHLIB': C compilation
 ########################################################################
 
 LDFLAGS+=${EXTRA_LIBRARY_PATH} -lda_AUX  -lda_IO -lm -lgsl -lgslcblas
@@ -37,6 +37,9 @@ TYPE_of_MAIN=LIKELIHOOD_MINIMIZATION_R_FUNCTION_CHECK###################
 EXE=SSS_CEDP############################################################
 ########################################################################
 
+# Variable to setup library paths for shared objects (*.so)#############
+RUNPATH=-Wl,-rpath=${LIBRARY_DIR}:${LIBRARY_IO_DIR}#####################
+
 OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o # R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization.o
 
 CC=gcc -fPIC -DSHARED_OBJECT##
@@ -47,7 +50,7 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 	${CC} $(CXXFLAGS) -c $<
 
 ${EXE}:  	$(OBJECTS) AUX_Library IO_Library
-		$(CC) $(CXXFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
+		$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Forcing always a re-build of auxiliary libraries
 AUX_Library:

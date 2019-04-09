@@ -37,9 +37,10 @@ TYPE_of_MAIN=MacKenzie_7GUILDS############ Options: 'COLEXT' / 'MacKenzie_7GUILD
 EXE=upgma_model_selection_${TYPE_of_MAIN}###############################
 ########################################################################
 
-RUNPATH=-Wl,-rpath=${LIBRARY_DIR},-rpath=${LIBRARY_IO_DIR}#############
+# Variable to setup library paths for shared objects (*.so)#############
+RUNPATH=-Wl,-rpath=${LIBRARY_DIR}:${LIBRARY_IO_DIR}#####################
 
-OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o # MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.o MODEL_SELECTION_UPGMA_R_FUNCTION.o
+OBJECTS = main_${TYPE_of_MAIN}.o argumentControl.o
 
 CC=gcc -fPIC -DSHARED_OBJECT##
 
@@ -51,8 +52,8 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 ### ${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
 ###	$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
 
-${EXE}: $(OBJECTS) AUX_Library IO_Library
-	$(CC) $(CXXFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
+${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
+	$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Forcing always a re-build of auxiliary static libraries
 AUX_Library:
