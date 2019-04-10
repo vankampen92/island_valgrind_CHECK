@@ -90,8 +90,8 @@ void R_SHLIB___mle_MacKenzie_NLLikelihood_Minimization(double * Presence_Data,
         printf(" Some matrix entries are not either 0 or 1\n");
         printf(" This function does not allow missing values (no flags are allowed)\n");
         printf(" The program will exit\n");
-        // IO_ERROR(0, 0, "Program has aborted");
-        printf("Program has aborted\n"); IO_ERROR(0,0,"Program aborted");
+        // error(0, 0, "Program has aborted");
+        printf("Program has aborted\n"); error(0,0,"Program aborted");
       }
     }
 

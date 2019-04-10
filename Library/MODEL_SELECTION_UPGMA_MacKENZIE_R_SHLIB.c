@@ -253,7 +253,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	  m++;
 	}
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); }
+      if( R[i][j] != m ) { printf("Program aborted\n"); error(0,0,"Program aborted"); }
     }
     if( (*Verbose) == 1) printf("\n");
     /*     E N D : --------------------------------------------------------
@@ -282,7 +282,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	}
 
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); } // assert( R[i][j] == m );
+      if( R[i][j] != m ) { printf("Program aborted\n"); error(0,0,"Program aborted"); } // assert( R[i][j] == m );
 
       if( (*Verbose) == 1) printf("\n");
       m = 0;
@@ -302,7 +302,7 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 	  m++;
 	}
       }
-      if( R[i][j] != m ) { printf("Program aborted\n"); IO_ERROR(0,0,"Program aborted"); } // assert( R[i][j] == m );
+      if( R[i][j] != m ) { printf("Program aborted\n"); error(0,0,"Program aborted"); } // assert( R[i][j] == m );
       // if( (*Verbose) == 1 )  getchar();
     }
     /*     E N D : ---------------------------------------------------------*/
@@ -336,11 +336,9 @@ void MODEL_SELECTION_UPGMA_MacKENZIE_R_SHLIB(double Colonization_Rate, double * 
 					   Verbose, Minimization,
 					   &NLL[i][j] );
       MODEL_NLL[i] += NLL[i][j];
-      /* if( (*Verbose) == 1) printf("Partition: %d-th: Group %d-th:", i,j );              */
-      /* if( (*Verbose) == 1) printf(" NLL (C = %g, E = %g, D = %g, P = %g) = %g\n",   */
-      /* 				   COL[i][j], EXT[i][j], DTC[i][j], P_0[i][j], NLL[i][j] );               */
-      printf("Partition: %d-th: Group %d-th:", i,j );
-      printf(" NLL (C = %g, E = %g, D = %g, P = %g) = %g\n",
+      
+      if( (*Verbose) == 1) printf("Partition: %d-th: Group %d-th:", i,j );
+      if( (*Verbose) == 1) printf(" NLL(C = %g, E = %g, D = %g, P = %g) = %g\n",
 	      COL[i][j], EXT[i][j], DTC[i][j], P_0[i][j], NLL[i][j] );
     }
 

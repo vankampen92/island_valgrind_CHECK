@@ -5,6 +5,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+#include <R.h>
+
 #include <time.h>
 #include <assert.h>
 #include <limits.h>
@@ -25,5 +27,3 @@
 #define MAX(A,B) ((A)>(B)? A:B)
 #define MIN(A,B) ((A)<(B)? A:B)
 #endif
-
-void IO_ERROR( int n_0, int n_1, char * Exit_Message); 

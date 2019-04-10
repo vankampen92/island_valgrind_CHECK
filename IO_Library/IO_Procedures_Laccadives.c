@@ -23,7 +23,7 @@ void Reading_Matrix_East_West_from_File(char * File_Name,  double ** Presence__D
   printf("Press any key to continue...\n"); // getchar();
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open file.\n");
-    IO_ERROR(0,0,"Program aborted");
+    error(0,0,"Program aborted");
   }
 
   for(i=0; i < N_row; i++){
@@ -81,7 +81,7 @@ void Reading_Matrix_from_File_Header_True(char * File_Name,  double ** Presence_
   printf("Press any key to continue...\n"); // getchar();
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open ""%s"" file.\n", File_Name);
-    IO_ERROR(0,0,"Program aborted");
+    error(0,0,"Program aborted");
   }
 
   char * Dummy = (char *)calloc( 50, sizeof(char) );
@@ -131,7 +131,7 @@ void Reading_Matrix_from_File(char * File_Name,  double ** Presence__Data,
   printf("Press any key to continue...\n"); // getchar();
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open ""%s"" file.\n", File_Name);
-    IO_ERROR(0,0,"Program aborted");
+    error(0,0,"Program aborted");
   }
 
   for(i=0; i < N_row; i++){
@@ -278,7 +278,7 @@ void Reading_Single_Matrix_East_West_from_File(  char * File_Name,
   printf("Press any key to continue...\n"); // getchar();
   if((fp=fopen(File_Name,"r")) == NULL) {
     printf("File non-existent! Cannot open file.\n");
-    IO_ERROR(0,0,"Program aborted");
+    error(0,0,"Program aborted");
   }
 
   for(i=0; i < N_row; i++){
