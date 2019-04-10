@@ -44,10 +44,10 @@
    MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION(...)
 
    which is intended to be R callable when compiled as a shared object (see makefile).
-   Notice that the compilation command below results in the shared object:
    
-   MODEL_SELECTION_UPGMA_MacKENZIE_R_FUNCTION.so. 
-   
+   The Makefile generates the libda_AUX.so shared object, which is a library 
+   containg all these functions. 
+
    The challenge to adapt previous C code into R friendly functions is memmory 
    alignment since R function .C(...) arguments are mandatory pointers to 1D 
    single arrays. Shared objects should be built to match this requirement in order 

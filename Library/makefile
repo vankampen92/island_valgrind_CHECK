@@ -5,7 +5,8 @@
 # Gnu C make cpgplot_GRID UTILS (libda_cpgplot_GRID.a)
 # LIB_DIR              = ${HOME}/C_pro/
 PROJECT_DIR          = ${HOME}/PROJECT_island_valgrind_CHECK/
-EXTRA_INCLUDE_PATH   = -I${PROJECT_DIR}Include/ -I${PROJECT_DIR}Library/
+INCLUDE_R_DIR=/usr/share/R/include/
+EXTRA_INCLUDE_PATH   = -I${PROJECT_DIR}Include/ -I${PROJECT_DIR}Library/ -I${INCLUDE_R_DIR}
 ## R_SHLIB is a compilation FLAG for the generation of libraries compatible
 ## with the generation of a shared object. When no shared object is needed,
 ## the R_SHLIB flag is not required and RSH should be defined as NON_R_SHLIB

@@ -3,12 +3,14 @@ PROJECT_DIR=${HOME}/PROJECT_island_valgrind_CHECK/
 LIBRARY_DIR=${PROJECT_DIR}Library/
 LIBRARY_IO_DIR=${PROJECT_DIR}IO_Library/
 INCLUDE_DIR=${PROJECT_DIR}Include/
+INCLUDE_R_DIR=/usr/share/R/include/
 WKD=${PROJECT_DIR}MODEL_SELECION_upgma/
 EXTRA_LIBRARY_PATH+=-L/usr/lib/
 EXTRA_LIBRARY_PATH+=-L/usr/local/lib/
 EXTRA_LIBRARY_PATH+=-L${LIBRARY_DIR}
 EXTRA_LIBRARY_PATH+=-L${LIBRARY_IO_DIR}
 EXTRA_INCLUDE_PATH+=-I${INCLUDE_DIR}
+EXTRA_INCLUDE_PATH+=-I${INCLUDE_R_DIR}
 EXTRA_INCLUDE_PATH+=-I${PROJECT_DIR}
 EXTRA_INCLUDE_PATH+=-I${LIBRARY_DIR}
 EXTRA_INCLUDE_PATH+=-I${LIBRARY_IO_DIR}
@@ -25,7 +27,7 @@ CPG=NON_CPGPLOT_REPRESENTATION#Possibilities:'CPGPLOT_REPRESENTATION' / 'NON_CPG
 RSH=NON_R_SHLIB# Optins 'R_SHLIB': R compilation / 'NON_R_SHLIB': C compilation
 ########################################################################
 
-LDFLAGS+=${EXTRA_LIBRARY_PATH} -lda_AUX  -lda_IO -lm -lgsl -lgslcblas
+LDFLAGS+=${EXTRA_LIBRARY_PATH} -lda_AUX  -lda_IO -lm -lgsl -lgslcblas -lR
 CXXFLAGS+=${EXTRA_INCLUDE_PATH} -g -Wall -D${CPG} -D${RSH}###############
 ######## either -g or some optimization opiton, for instance, -O3
 ########################################################################
@@ -49,8 +51,8 @@ CC=gcc -fPIC -DSHARED_OBJECT##
 .c.o:
 	${CC} $(CXXFLAGS) -c $<
 
-### ${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
-###	$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
+### ${EXE}: $(OBJECTS) AUX_Library IO_Library
+###	$(CC) $(CXXFLAGS) -o $@ $(OBJECTS) $(LDFLAGS)
 
 ${EXE}: $(OBJECTS) AUX_Library_SO IO_Library_SO
 	$(CC) $(CXXFLAGS) ${RUNPATH} -o $@ $(OBJECTS) $(LDFLAGS)
